@@ -1,11 +1,11 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { Phone, ArrowRight, Droplets, Shovel, TreePine, Building2, Star, CheckCircle2, MapPin, Menu, X } from 'lucide-react';
+import { Phone, ArrowRight, Droplets, Shovel, Leaf, Building2, Star, CheckCircle2, MapPin, Menu, X, Layers } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const services = [
   { icon: Droplets, title: 'Irrigation & Sprinklers', desc: 'Smart water management systems designed for your local climate to ensure absolute vitality.' },
   { icon: Shovel, title: 'French Drains', desc: 'Professional drainage solutions engineering optimal water routing to protect your property.' },
-  { icon: TreePine, title: 'Tree Removal', desc: 'Safe, fully insured arboricultural services designed to clear and maintain your estate.' },
+  { icon: Layers, title: 'Modern Hardscaping', desc: 'Premium stone, paver, and structural retaining wall installations to elevate property aesthetics.' },
   { icon: Building2, title: 'Commercial Landscaping', desc: 'Reliable, large-scale property maintenance engineered for premium business aesthetics.' },
 ];
 
@@ -13,7 +13,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
   const locName = location === 'TX' ? 'Northeast Texas' : 'West Alabama';
   const locCities = location === 'TX' ? 'Sulphur Springs & Greenville' : 'Tuscaloosa';
   const phone = location === 'TX' ? '(903) 555-0198' : '(205) 555-0123';
-  
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -32,11 +32,11 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer group" onClick={onReset}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-brand-dark rounded-xl flex items-center justify-center group-hover:bg-brand-green transition-colors duration-500 shadow-lg">
-              <TreePine className="text-white w-6 h-6" />
+              <Leaf className="text-white w-6 h-6" />
             </div>
             <span className="font-display font-bold text-2xl md:text-3xl text-brand-dark tracking-tight">AlaTex</span>
           </div>
-          
+
           <div className="hidden md:flex items-center gap-10">
             {['Services', 'Our Story', 'Reviews'].map((item) => (
               <a key={item} href={`#${item.toLowerCase().replace(' ', '-')}`} className="text-sm font-semibold text-gray-500 hover:text-brand-dark transition-colors">
@@ -44,7 +44,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
               </a>
             ))}
           </div>
-          
+
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-2 text-brand-dark font-display font-semibold">
               <Phone className="w-5 h-5 text-brand-accent" />
@@ -64,7 +64,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
       {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -84,7 +84,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
               </div>
             </div>
             <div className="pt-8 border-t border-gray-100 flex flex-col gap-4">
-              <a href={`tel:${phone.replace(/\D/g,'')}`} className="flex items-center justify-center gap-2 bg-brand-light text-brand-dark py-4 rounded-2xl font-bold">
+              <a href={`tel:${phone.replace(/\D/g, '')}`} className="flex items-center justify-center gap-2 bg-brand-light text-brand-dark py-4 rounded-2xl font-bold">
                 <Phone className="w-5 h-5" /> Call {phone}
               </a>
               <button className="bg-brand-dark text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
@@ -97,7 +97,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
 
       {/* Cinematic Hero */}
       <section className="relative pt-32 pb-16 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-        <motion.div 
+        <motion.div
           className="w-full lg:w-[55%] flex flex-col items-start"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -107,11 +107,11 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
             <MapPin className="w-4 h-4 text-brand-accent" /> Operating in {locCities}
           </div>
           <h1 className="text-[12vw] sm:text-[9vw] lg:text-[5.5vw] xl:text-[6vw] font-display font-extrabold text-brand-dark leading-[0.9] tracking-tighter mb-8 max-w-2xl">
-            Absolute <br/>
+            Absolute <br />
             <span className="text-brand-green relative inline-block">
               Excellence
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-brand-accent transform origin-left"></div>
-            </span> <br/>
+            </span> <br />
             in {locName}
           </h1>
           <p className="text-lg md:text-2xl text-gray-500 mb-10 max-w-xl font-medium leading-relaxed">
@@ -126,8 +126,8 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
             </div>
           </div>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="w-full lg:w-[45%] relative"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -137,16 +137,16 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
             <img src={'/hero.png'} alt="Premium Landscaping Strategy" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"></div>
           </div>
-          
+
           {/* Asymmetric Floating Benchmark */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="absolute -bottom-6 -left-4 sm:-left-12 bg-white p-6 sm:p-8 rounded-3xl shadow-2xl border border-gray-100 max-w-[280px]"
           >
             <div className="flex gap-1 mb-3">
-              {[1,2,3,4,5].map(i => <Star key={i} className="w-6 h-6 fill-brand-accent text-brand-accent" />)}
+              {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-6 h-6 fill-brand-accent text-brand-accent" />)}
             </div>
             <p className="text-sm sm:text-base font-bold text-brand-dark leading-snug">"The absolute highest standard of landscaping in {locCities}."</p>
           </motion.div>
@@ -166,7 +166,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
           >
             <div>
               <div className="text-brand-accent font-bold tracking-widest uppercase text-sm mb-4">The Evolution</div>
-              <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-8 leading-[1.1]">Four Seasons is now <br/><span className="text-brand-green">AlaTex.</span></h2>
+              <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-8 leading-[1.1]">Four Seasons is now <br /><span className="text-brand-green">AlaTex.</span></h2>
               <p className="text-xl text-gray-300 leading-relaxed font-medium mb-8">
                 As our footprint expanded across Texas and Alabama, we realized our brand needed to reflect the scale and precision of our operations. We have unified under AlaTex Landscaping.
               </p>
@@ -198,7 +198,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
           </div>
           <div className="grid md:grid-cols-2 gap-6 md:gap-10">
             {services.map((service, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -230,10 +230,10 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 cursor-grab active:cursor-grabbing">
             {[
               { name: "Sarah Jenkins", text: "Four Seasons (now AlaTex) engineered an entirely new irrigation protocol for our estate. Absolutely flawless execution." },
-              { name: "Mike Roberts", text: "The scale of the tree removal we needed required absolute professionals. The AlaTex team operated with military precision." },
+              { name: "Mike Roberts", text: "The scale of the hardscaping and drainage revamp we needed required absolute professionals. The AlaTex team executed with military precision." },
               { name: "David Chen", text: "We trust them with our entire commercial portfolio. The transition to AlaTex has only elevated their standard of output." }
             ].map((review, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -242,7 +242,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
                 className="bg-white p-10 rounded-[2rem] shadow-sm border border-brand-green/5"
               >
                 <div className="flex gap-1 mb-6">
-                  {[1,2,3,4,5].map(i => <Star key={i} className="w-5 h-5 fill-brand-accent text-brand-accent" />)}
+                  {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-5 h-5 fill-brand-accent text-brand-accent" />)}
                 </div>
                 <p className="text-gray-600 mb-8 text-lg font-medium leading-relaxed">"{review.text}"</p>
                 <div className="font-bold text-brand-dark text-lg">{review.name}</div>
@@ -271,7 +271,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <TreePine className="text-brand-green w-8 h-8" />
+              <Leaf className="text-brand-green w-8 h-8" />
               <span className="font-display font-extrabold text-2xl text-white tracking-tight">AlaTex</span>
             </div>
             <p className="font-medium max-w-sm mb-8">
