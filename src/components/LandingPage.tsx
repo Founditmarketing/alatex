@@ -3,16 +3,16 @@ import { Phone, ArrowRight, Droplets, Shovel, Leaf, Building2, Star, CheckCircle
 import { useState, useEffect } from 'react';
 
 const services = [
-  { icon: Droplets, title: 'Irrigation & Sprinklers', desc: 'Smart water management systems designed for your local climate to ensure absolute vitality.' },
-  { icon: Shovel, title: 'French Drains', desc: 'Professional drainage solutions engineering optimal water routing to protect your property.' },
-  { icon: Layers, title: 'Modern Hardscaping', desc: 'Premium stone, paver, and structural retaining wall installations to elevate property aesthetics.' },
-  { icon: Building2, title: 'Commercial Landscaping', desc: 'Reliable, large-scale property maintenance engineered for premium business aesthetics.' },
+  { icon: Droplets, title: 'Irrigation & Sprinklers', desc: 'Installation, repair, and maintenance of holistic irrigation systems to ensure absolute vitality.' },
+  { icon: Shovel, title: 'Advanced Drainage', desc: 'Zero soil erosion. No standing water. Engineered drainage solutions that guarantee a thriving, protected landscape.' },
+  { icon: Leaf, title: 'Weed Control & Lawn Care', desc: 'From sprawling commercial properties to premium residential homes, ensuring a pristine and immaculate environment.' },
+  { icon: Layers, title: 'Custom Landscaping', desc: 'From fundamental high-fidelity landscape maintenance to the master architecture of stunning outdoor living spaces.' },
 ];
 
 export default function LandingPage({ location, onReset }: { location: 'TX' | 'AL', onReset: () => void }) {
   const locName = location === 'TX' ? 'Northeast Texas' : 'West Alabama';
   const locCities = location === 'TX' ? 'Sulphur Springs & Greenville' : 'Tuscaloosa';
-  const phone = location === 'TX' ? '(903) 555-0198' : '(205) 555-0123';
+  const phone = location === 'TX' ? '(903) 440-1759' : '(205) 310-0553';
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -288,10 +288,11 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
           </div>
           <div>
             <h4 className="text-white font-bold mb-6 tracking-widest uppercase text-sm">Contact</h4>
-            <div className="flex flex-col gap-4 font-semibold">
-              <span className="text-brand-accent">{phone}</span>
+            <div className="flex flex-col gap-4 font-semibold text-gray-400">
+              <span className="text-brand-accent font-bold text-lg">{phone}</span>
+              <a href="mailto:Bryan@alatexlandscaping.com" className="hover:text-white transition-colors">Bryan@alatexlandscaping.com</a>
               <span>Serving {locCities}</span>
-              <span>Fully Licensed & Insured</span>
+              <span className="flex items-center gap-2 mt-2 text-sm"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Fully Licensed & Insured</span>
             </div>
           </div>
         </div>
