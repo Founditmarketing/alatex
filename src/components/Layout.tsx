@@ -53,6 +53,9 @@ export default function Layout() {
                                 {item}
                             </Link>
                         ))}
+                        <Link to="/case-studies/chick-fil-a" className="text-sm font-semibold text-gray-500 hover:text-brand-dark transition-colors">
+                            Case Studies
+                        </Link>
                     </div>
 
                     <div className="hidden md:flex items-center gap-6">
@@ -91,6 +94,7 @@ export default function Layout() {
                                 <Link to="/#services" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
                                 <Link to="/#our-story" onClick={() => setIsMobileMenuOpen(false)}>Our Story</Link>
                                 <Link to="/#reviews" onClick={() => setIsMobileMenuOpen(false)}>Reviews</Link>
+                                <Link to="/case-studies/chick-fil-a" onClick={() => setIsMobileMenuOpen(false)}>Case Studies</Link>
                             </div>
                         </div>
                         <div className="pt-8 border-t border-gray-100 flex flex-col gap-4">
