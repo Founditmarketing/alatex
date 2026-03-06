@@ -4,15 +4,14 @@ import { useState, useEffect } from 'react';
 
 const services = [
   { icon: Droplets, title: 'Irrigation & Sprinklers', desc: 'Installation, repair, and maintenance of holistic irrigation systems to ensure absolute vitality.' },
-  { icon: Shovel, title: 'Advanced Drainage', desc: 'Zero soil erosion. No standing water. Engineered drainage solutions that guarantee a thriving, protected landscape.' },
-  { icon: Leaf, title: 'Weed Control & Lawn Care', desc: 'From sprawling commercial properties to premium residential homes, ensuring a pristine and immaculate environment.' },
-  { icon: Layers, title: 'Custom Landscaping', desc: 'From fundamental high-fidelity landscape maintenance to the master architecture of stunning outdoor living spaces.' },
+  { icon: Shovel, title: 'Advanced French Drains', desc: 'Zero soil erosion. No standing water. Engineered drainage solutions that guarantee a thriving, protected landscape.' },
+  { icon: Building2, title: 'Commercial Maintenance', desc: 'From sprawling commercial properties to premium corporate facilities, ensuring a pristine and immaculate environment.' },
 ];
 
-export default function LandingPage({ location, onReset }: { location: 'TX' | 'AL', onReset: () => void }) {
-  const locName = location === 'TX' ? 'Northeast Texas' : 'West Alabama';
-  const locCities = location === 'TX' ? 'Sulphur Springs & Greenville' : 'Tuscaloosa';
-  const phone = location === 'TX' ? '(903) 440-1759' : '(205) 310-0553';
+export default function LandingPage() {
+  const locName = 'West Alabama';
+  const locCities = 'Tuscaloosa & Northport';
+  const phone = '(205) 310-0553';
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -30,7 +29,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
       {/* Premium Nuclear Navigation */}
       <nav className={`fixed top-0 w-full z-[100000] transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-sm py-3' : 'bg-transparent py-5'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          <div className="flex items-center gap-3 cursor-pointer group" onClick={onReset}>
+          <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo(0, 0)}>
             <div className="w-10 h-10 md:w-12 md:h-12 bg-brand-dark rounded-xl flex items-center justify-center group-hover:bg-brand-green transition-colors duration-500 shadow-lg">
               <Leaf className="text-white w-6 h-6" />
             </div>
@@ -51,7 +50,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
               {phone}
             </div>
             <button className="bg-brand-dark hover:bg-brand-green text-white px-7 py-3 rounded-full font-bold text-sm transition-all duration-300 shadow-xl shadow-brand-dark/20 flex items-center gap-2 group">
-              Book Estimate <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              Schedule a Commercial Site Walkthrough <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
 
@@ -88,7 +87,7 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
                 <Phone className="w-5 h-5" /> Call {phone}
               </a>
               <button className="bg-brand-dark text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-                Book Estimate <ArrowRight className="w-5 h-5" />
+                Schedule Walkthrough <ArrowRight className="w-5 h-5" />
               </button>
             </div>
           </motion.div>
@@ -106,16 +105,15 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-white shadow-sm text-brand-dark font-semibold text-xs uppercase tracking-widest mb-8">
             <MapPin className="w-4 h-4 text-brand-accent" /> Operating in {locCities}
           </div>
-          <h1 className="text-[12vw] sm:text-[9vw] lg:text-[5.5vw] xl:text-[6vw] font-display font-extrabold text-brand-dark leading-[0.9] tracking-tighter mb-8 max-w-2xl">
-            Absolute <br />
+          <h1 className="text-[10vw] sm:text-[8vw] lg:text-[4.5vw] xl:text-[5vw] font-display font-extrabold text-brand-dark leading-[1] tracking-tighter mb-8 max-w-3xl">
+            Alabama’s Premier Partner for  <br />
             <span className="text-brand-green relative inline-block">
-              Excellence
+              High-Stakes
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-brand-accent transform origin-left"></div>
-            </span> <br />
-            in {locName}
+            </span> Landscaping
           </h1>
-          <p className="text-lg md:text-2xl text-gray-500 mb-10 max-w-xl font-medium leading-relaxed">
-            Elevating properties through structural precision and master-level landscape architecture. The new standard for outdoor environments.
+          <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-xl font-medium leading-relaxed">
+            From local landmarks like Chick-fil-A to your private estate, we deliver 3rd-generation expertise with commercial-grade precision.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto">
             <button className="w-full sm:w-auto bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3">
@@ -165,12 +163,12 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
             className="grid lg:grid-cols-2 gap-16 items-center"
           >
             <div>
-              <div className="text-brand-accent font-bold tracking-widest uppercase text-sm mb-4">The Evolution</div>
-              <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-8 leading-[1.1]">Four Seasons is now <br /><span className="text-brand-green">AlaTex.</span></h2>
+              <div className="text-brand-accent font-bold tracking-widest uppercase text-sm mb-4">The AlaTex Philosophy</div>
+              <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-8 leading-[1.1]">"What got us here, <br /><span className="text-brand-green">won't get us there."</span></h2>
               <p className="text-xl text-gray-300 leading-relaxed font-medium mb-8">
-                As our footprint expanded across Texas and Alabama, we realized our brand needed to reflect the scale and precision of our operations. We have unified under AlaTex Landscaping.
+                As our footprint expands, we realize our firm needs to reflect the scale and precision of our most demanding commercial clients. AlaTex is evolving to meet the institutional standards of {locName}.
               </p>
-              <p className="text-lg text-gray-400">Same ownership. Same elite crews. A new era of institutional-grade service.</p>
+              <p className="text-lg text-gray-400">Same ownership. Same elite crews. A new era of commercial-grade execution.</p>
             </div>
             <div className="grid grid-cols-2 gap-x-8 gap-y-12">
               {[
@@ -218,6 +216,38 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
         </div>
       </section>
 
+      {/* The Chick-fil-A Authority */}
+      <section className="py-24 bg-brand-dark text-white relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-brand-accent font-bold tracking-widest uppercase text-sm mb-4 text-center">Commercial Excellence</div>
+          <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-16 text-center leading-tight tracking-tight">Meeting Corporate Standards. <br className="hidden md:block" /><span className="text-brand-green">Precision Implementation.</span></h2>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="aspect-[4/3] bg-gray-800 rounded-3xl overflow-hidden relative shadow-2xl border border-gray-700 flex items-center justify-center">
+              <span className="text-gray-500 font-bold uppercase tracking-widest">[Placeholder: Professional Crew Photo @ CFA Skyland Blvd]</span>
+            </div>
+
+            <div className="flex flex-col gap-10">
+              <div className="flex gap-6 items-start">
+                <CheckCircle2 className="w-8 h-8 text-brand-green shrink-0 mt-1" />
+                <div>
+                  <h4 className="text-2xl font-bold mb-2">Professional Accountability</h4>
+                  <p className="text-gray-400 text-lg leading-relaxed">We understand the demands of high-traffic commercial spaces. Our crews adhere strictly to corporate regulations and safety protocols.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <CheckCircle2 className="w-8 h-8 text-brand-green shrink-0 mt-1" />
+                <div>
+                  <h4 className="text-2xl font-bold mb-2">Zero-Disruption Operations</h4>
+                  <p className="text-gray-400 text-lg leading-relaxed">Strategically phased landscaping deployment to ensure critical business operations continue without interruption.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Narrative Proof */}
       <section id="reviews" className="py-24 bg-brand-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -229,9 +259,9 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
           </div>
           <div className="grid md:grid-cols-3 gap-6 md:gap-8 cursor-grab active:cursor-grabbing">
             {[
-              { name: "Sarah Jenkins", text: "Four Seasons (now AlaTex) engineered an entirely new irrigation protocol for our estate. Absolutely flawless execution." },
+              { name: "Sarah Jenkins", text: "AlaTex engineered an entirely new irrigation protocol for our estate. Absolutely flawless execution." },
               { name: "Mike Roberts", text: "The scale of the hardscaping and drainage revamp we needed required absolute professionals. The AlaTex team executed with military precision." },
-              { name: "David Chen", text: "We trust them with our entire commercial portfolio. The transition to AlaTex has only elevated their standard of output." }
+              { name: "David Chen", text: "We trust them with our entire commercial portfolio. Their commitment to excellence has only elevated their standard of output." }
             ].map((review, idx) => (
               <motion.div
                 key={idx}
@@ -274,9 +304,10 @@ export default function LandingPage({ location, onReset }: { location: 'TX' | 'A
               <Leaf className="text-brand-green w-8 h-8" />
               <span className="font-display font-extrabold text-2xl text-white tracking-tight">AlaTex</span>
             </div>
-            <p className="font-medium max-w-sm mb-8">
-              The premier resource for absolute landscaping excellence across {locName} and beyond. (Formerly Four Seasons Landscaping).
+            <p className="font-medium max-w-sm mb-4">
+              The premier resource for absolute landscaping excellence across {locName} and beyond.
             </p>
+            <p className="text-xs text-gray-600 font-medium">Our Roots: Founded in Texas, our 3rd-generation expertise now proudly serves the Alabama commercial landscape.</p>
           </div>
           <div>
             <h4 className="text-white font-bold mb-6 tracking-widest uppercase text-sm">Navigation</h4>
