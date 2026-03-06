@@ -1,9 +1,10 @@
 import { motion } from 'motion/react';
 import { Phone, ArrowRight, Building2, CheckCircle2, Factory, ShieldCheck, MapPin } from 'lucide-react';
+import { useGeo } from '../hooks/useGeo';
 
 export default function CommercialMaintenance() {
+    const { locCities } = useGeo();
     const phone = '(205) 310-0553';
-    const locCities = 'Tuscaloosa & Northport';
 
     return (
         <>

@@ -1,9 +1,10 @@
 import { motion } from 'motion/react';
 import { Phone, Shovel, ShieldAlert, Zap, Layers } from 'lucide-react';
+import { useGeo } from '../hooks/useGeo';
 
 export default function FrenchDrains() {
+    const { locCities } = useGeo();
     const phone = '(205) 310-0553';
-    const locCities = 'Tuscaloosa & Northport';
 
     return (
         <>

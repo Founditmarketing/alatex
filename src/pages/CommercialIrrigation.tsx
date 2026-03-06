@@ -1,9 +1,10 @@
 import { motion } from 'motion/react';
 import { Phone, Droplets, ArrowRight, CheckCircle2, Waves, Sunrise } from 'lucide-react';
+import { useGeo } from '../hooks/useGeo';
 
 export default function CommercialIrrigation() {
+    const { locCities } = useGeo();
     const phone = '(205) 310-0553';
-    const locCities = 'Tuscaloosa & Northport';
 
     return (
         <>

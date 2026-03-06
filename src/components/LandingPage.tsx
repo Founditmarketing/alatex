@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Phone, ArrowRight, Droplets, Shovel, Building2, Star, CheckCircle2, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useGeo } from '../hooks/useGeo';
 
 const services = [
   { icon: Droplets, title: 'Irrigation & Sprinklers', desc: 'Installation, repair, and maintenance of holistic irrigation systems to ensure absolute vitality.', link: '/services/commercial-irrigation' },
@@ -9,8 +10,7 @@ const services = [
 ];
 
 export default function LandingPage() {
-  const locName = 'West Alabama';
-  const locCities = 'Tuscaloosa & Northport';
+  const { locName, locCities } = useGeo();
   const phone = '(205) 310-0553';
   return (
     <>

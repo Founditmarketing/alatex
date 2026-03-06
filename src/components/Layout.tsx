@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { Leaf, Phone, ArrowRight, Menu, X, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
+import { useGeo } from '../hooks/useGeo';
 
 export default function Layout() {
-    const locName = 'West Alabama';
-    const locCities = 'Tuscaloosa & Northport';
+    const { locName, locCities } = useGeo();
     const phone = '(205) 310-0553';
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
