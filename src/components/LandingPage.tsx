@@ -132,7 +132,7 @@ export default function LandingPage() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
         >
           <div className="aspect-[4/5] md:aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl relative">
-            <img src={'/hero.png'} alt="Premium Landscaping Strategy" className="w-full h-full object-cover" />
+            <img src={'/commercial_hero.png'} alt="Premium Commercial Landscaping Strategy" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"></div>
           </div>
 
@@ -223,8 +223,8 @@ export default function LandingPage() {
           <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-16 text-center leading-tight tracking-tight">Meeting Corporate Standards. <br className="hidden md:block" /><span className="text-brand-green">Precision Implementation.</span></h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="aspect-[4/3] bg-gray-800 rounded-3xl overflow-hidden relative shadow-2xl border border-gray-700 flex items-center justify-center">
-              <span className="text-gray-500 font-bold uppercase tracking-widest">[Placeholder: Professional Crew Photo @ CFA Skyland Blvd]</span>
+            <div className="aspect-[4/3] rounded-[2rem] overflow-hidden relative shadow-2xl border border-gray-700">
+              <img src={'/commercial_crew.png'} alt="AlaTex Professional Landscaping Crew" className="w-full h-full object-cover" />
             </div>
 
             <div className="flex flex-col gap-10">
