@@ -12,10 +12,20 @@ export default function Layout() {
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
 
-    // Scroll to top on route change
+    // Scroll to top or to hash on route change
     useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [location.pathname]);
+        if (location.hash) {
+            // Small timeout ensures the element is rendered if navigating from another page
+            setTimeout(() => {
+                const element = document.getElementById(location.hash.replace('#', ''));
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [location.pathname, location.hash]);
 
     useEffect(() => {
         const handleScroll = () => {
