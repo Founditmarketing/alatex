@@ -34,9 +34,9 @@ export default function LandingPage() {
             From local landmarks like Chick-fil-A to your private estate, we deliver 3rd-generation expertise with commercial-grade precision.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto">
-            <button className="w-full sm:w-auto bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3">
+            <Link to="/consultation" className="w-full sm:w-auto bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3">
               Initiate Project
-            </button>
+            </Link>
             <div className="flex items-center gap-3 text-sm font-semibold text-gray-400 bg-white py-3 px-5 rounded-full border border-gray-100 shadow-sm">
               <CheckCircle2 className="w-5 h-5 text-brand-green" /> Fully Licensed & Insured
             </div>
@@ -214,9 +214,9 @@ export default function LandingPage() {
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-5xl md:text-7xl font-display font-extrabold text-white mb-8 tracking-tighter">Command Your Space.</h2>
           <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto font-medium">Schedule a strategic consultation to engineer the absolute best outcome for your property.</p>
-          <button className="bg-brand-accent hover:bg-white text-brand-dark px-12 py-6 rounded-full font-bold text-xl md:text-2xl transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto group">
-            <Phone className="w-6 h-6 md:w-8 md:h-8" /> Call {phone} Now
-          </button>
+          <Link to="/consultation" className="bg-brand-accent hover:bg-white text-brand-dark px-12 py-6 rounded-full font-bold text-xl md:text-2xl transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto group w-max">
+            Initiate Protocol <ArrowRight className="w-6 h-6 md:w-8 md:h-8 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
       </section>
     </>

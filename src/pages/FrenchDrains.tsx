@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { Phone, Shovel, ShieldAlert, Zap, Layers } from 'lucide-react';
+import { Phone, Shovel, ShieldAlert, Zap, Layers, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useGeo } from '../hooks/useGeo';
 
 export default function FrenchDrains() {
@@ -25,9 +26,9 @@ export default function FrenchDrains() {
                     <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-xl font-medium leading-relaxed">
                         Protect your commercial property foundation and landscape investment with heavy-duty, professionally engineered French drain systems built for the severe Alabama climate.
                     </p>
-                    <button className="bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3">
+                    <Link to="/consultation" className="bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 w-max">
                         Schedule a Drainage Inspection
-                    </button>
+                    </Link>
                 </motion.div>
 
                 <motion.div
@@ -51,9 +52,9 @@ export default function FrenchDrains() {
 
             <section className="bg-brand-dark py-24 md:py-32 text-center text-white px-4">
                 <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-8 tracking-tighter">Engineered Drainage Solutions.</h2>
-                <button className="bg-brand-accent hover:bg-white text-brand-dark px-12 py-6 rounded-full font-bold text-xl md:text-2xl transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto">
-                    <Phone className="w-6 h-6" /> Call {phone}
-                </button>
+                <Link to="/consultation" className="bg-brand-accent hover:bg-white text-brand-dark px-12 py-6 rounded-full font-bold text-xl md:text-2xl transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto w-max group">
+                    Initiate Protocol <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                </Link>
             </section>
         </>
     );

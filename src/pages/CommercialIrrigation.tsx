@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Phone, Droplets, ArrowRight, CheckCircle2, Waves, Sunrise } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useGeo } from '../hooks/useGeo';
 
 export default function CommercialIrrigation() {
@@ -24,9 +25,9 @@ export default function CommercialIrrigation() {
                     <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
                         We engineer, install, and mandate high-capacity irrigation systems that guarantee the absolute vitality of your commercial property investments across West Alabama.
                     </p>
-                    <button className="bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto">
+                    <Link to="/consultation" className="bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto w-max">
                         Get an Irrigation Estimate
-                    </button>
+                    </Link>
                 </motion.div>
             </section>
 
@@ -79,9 +80,9 @@ export default function CommercialIrrigation() {
 
             <section className="bg-brand-dark py-24 md:py-32 text-center text-white px-4">
                 <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-8 tracking-tighter">Command Your Water Control.</h2>
-                <button className="bg-brand-accent hover:bg-white text-brand-dark px-12 py-6 rounded-full font-bold text-xl md:text-2xl transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto">
-                    <Phone className="w-6 h-6" /> Call {phone}
-                </button>
+                <Link to="/consultation" className="bg-brand-accent hover:bg-white text-brand-dark px-12 py-6 rounded-full font-bold text-xl md:text-2xl transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto w-max group">
+                    Initiate Protocol <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                </Link>
             </section>
         </>
     );

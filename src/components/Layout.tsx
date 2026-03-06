@@ -60,9 +60,9 @@ export default function Layout() {
                             <Phone className="w-5 h-5 text-brand-accent" />
                             {phone}
                         </div>
-                        <button className="bg-brand-dark hover:bg-brand-green text-white px-7 py-3 rounded-full font-bold text-sm transition-all duration-300 shadow-xl shadow-brand-dark/20 flex items-center gap-2 group">
+                        <Link to="/consultation" className="bg-brand-dark hover:bg-brand-green text-white px-7 py-3 rounded-full font-bold text-sm transition-all duration-300 shadow-xl shadow-brand-dark/20 flex items-center gap-2 group">
                             Schedule a Commercial Site Walkthrough <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </button>
+                        </Link>
                     </div>
 
                     <button className="md:hidden text-brand-dark p-2" onClick={() => setIsMobileMenuOpen(true)}>
@@ -97,9 +97,9 @@ export default function Layout() {
                             <a href={`tel:${phone.replace(/\D/g, '')}`} className="flex items-center justify-center gap-2 bg-brand-light text-brand-dark py-4 rounded-2xl font-bold">
                                 <Phone className="w-5 h-5" /> Call {phone}
                             </a>
-                            <button className="bg-brand-dark text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+                            <Link to="/consultation" className="bg-brand-dark text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
                                 Schedule Walkthrough <ArrowRight className="w-5 h-5" />
-                            </button>
+                            </Link>
                         </div>
                     </motion.div>
                 )}
