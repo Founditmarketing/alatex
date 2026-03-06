@@ -178,11 +178,14 @@ export default function LandingPage() {
             Read All Reviews <ArrowRight className="w-5 h-5" />
           </button>
         </div>
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8 cursor-grab active:cursor-grabbing">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 cursor-grab active:cursor-grabbing">
           {[
             { name: "Sarah Jenkins", text: "AlaTex engineered an entirely new irrigation protocol for our estate. Absolutely flawless execution." },
             { name: "Mike Roberts", text: "The scale of the hardscaping and drainage revamp we needed required absolute professionals. The AlaTex team executed with military precision." },
-            { name: "David Chen", text: "We trust them with our entire commercial portfolio. Their commitment to excellence has only elevated their standard of output." }
+            { name: "David Chen", text: "We trust them with our entire commercial portfolio. Their commitment to excellence has only elevated their standard of output." },
+            { name: "Emily Rostova", text: "They completely overtook our corporate park's maintenance contract. The difference in operational footprint and aesthetic quality was immediate." },
+            { name: "James Harding", text: "When we developed the new shopping center in Northport, AlaTex was the only firm that could handle the scale of the French Drain systems required." },
+            { name: "Robert Lewis", text: "Zero disruption to our daily operations. They handled all landscaping upgrades while our facility stayed fully operational. Complete professionals." }
           ].map((review, idx) => (
             <motion.div
               key={idx}
