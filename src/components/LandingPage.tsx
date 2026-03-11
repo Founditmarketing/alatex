@@ -85,7 +85,7 @@ export default function LandingPage() {
           >
             <div className="text-brand-accent font-bold tracking-widest uppercase text-sm mb-4">Our Story</div>
             <h2 className="text-4xl md:text-6xl font-display font-extrabold leading-[1.1] max-w-3xl">
-              Built From a <br /><span className="text-brand-green">Side Hustle.</span> Proven at Scale.
+              Bryan Moore Started This <br /><span className="text-brand-green">Company From Nothing.</span>
             </h2>
           </motion.div>
 
@@ -140,9 +140,9 @@ export default function LandingPage() {
                 ))}
               </div>
               <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-                <p className="text-brand-accent font-bold uppercase text-xs tracking-widest mb-4">The AlaTex Standard</p>
-                <p className="text-xl text-white font-semibold leading-snug mb-3">"What got us here won't get us there."</p>
-                <p className="text-gray-400 text-base leading-relaxed">Same ownership. Same relentless work ethic. A new chapter of commercial-grade execution — built on everything Bryan learned the hard way.</p>
+                <p className="text-brand-accent font-bold uppercase text-xs tracking-widest mb-4">How We Work</p>
+                <p className="text-xl text-white font-semibold leading-snug mb-3">Bryan treats every property like his name is on it — because it is.</p>
+                <p className="text-gray-400 text-base leading-relaxed">Owner-operated means Bryan is personally accountable for every job. The same work ethic that built AlaTex from nothing is what shows up on your property every single time.</p>
               </div>
             </div>
 
