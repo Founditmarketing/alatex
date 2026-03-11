@@ -31,7 +31,7 @@ export default function LandingPage() {
             </span> Landscaping
           </h1>
           <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-xl font-medium leading-relaxed">
-            From local landmarks like Chick-fil-A to your private estate, we deliver 3rd-generation expertise with commercial-grade precision.
+            From local landmarks like Chick-fil-A to your private estate — built from the ground up by owner-operator Bryan Moore, with real-world expertise earned one job at a time.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto">
             <Link to="/consultation" className="w-full sm:w-auto bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3">
@@ -69,38 +69,83 @@ export default function LandingPage() {
         </motion.div>
       </section>
 
-      {/* Brand Continuity Banner */}
-      <section id="our-story" className="bg-brand-dark text-white py-24 relative overflow-hidden">
+      {/* Bryan Moore Origin Story */}
+      <section id="our-story" className="bg-brand-dark text-white py-24 md:py-32 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-brand-green/20 blur-[100px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-[40vw] h-[40vw] bg-brand-accent/10 blur-[120px] rounded-full -translate-x-1/2 translate-y-1/2"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+          {/* Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="mb-16 md:mb-20"
+          >
+            <div className="text-brand-accent font-bold tracking-widest uppercase text-sm mb-4">Our Story</div>
+            <h2 className="text-4xl md:text-6xl font-display font-extrabold leading-[1.1] max-w-3xl">
+              Built From a <br /><span className="text-brand-green">Side Hustle.</span> Proven at Scale.
+            </h2>
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="grid lg:grid-cols-2 gap-16 items-center"
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="grid lg:grid-cols-2 gap-16 items-start"
           >
-            <div>
-              <div className="text-brand-accent font-bold tracking-widest uppercase text-sm mb-4">The AlaTex Philosophy</div>
-              <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-8 leading-[1.1]">"What got us here, <br /><span className="text-brand-green">won't get us there."</span></h2>
-              <p className="text-xl text-gray-300 leading-relaxed font-medium mb-8">
-                As our footprint expands, we realize our firm needs to reflect the scale and precision of our most demanding commercial clients. AlaTex is evolving to meet the institutional standards of West Alabama.
+
+            {/* Narrative */}
+            <div className="flex flex-col gap-8">
+              <p className="text-xl text-gray-300 leading-relaxed font-medium">
+                Bryan Moore didn't inherit a landscape company — he built one. It started as a sprinkler repair side hustle while he was working in corporate supply management: a second job he took on to keep busy and earn extra income.
               </p>
-              <p className="text-lg text-gray-400">Same ownership. Same elite crews. A new era of commercial-grade execution.</p>
+              <p className="text-lg text-gray-400 leading-relaxed">
+                As clients started requesting more work, Bryan leaned in. He learned as he went, evolving alongside the industry itself. For the first several years, every new job came through word-of-mouth — friends, neighbors, referrals — with no advertising budget and no playbook. Just results that spoke for themselves.
+              </p>
+              <p className="text-lg text-gray-400 leading-relaxed">
+                That scrappy beginning turned into something real. Before long, Bryan was running multiple trucks, multiple crews, and projects spanning several states. In the early days he'd drive whatever work truck was available — eventually, he had a fleet.
+              </p>
+              <p className="text-lg text-gray-400 leading-relaxed">
+                After a fresh start, Bryan is back to one crew and his own truck — but he's been here before and knows exactly how to scale. The foundation, the process, the reputation: all intact. AlaTex is building back.
+              </p>
+
+              {/* Chamber of Commerce callout */}
+              <div className="border-l-4 border-brand-green pl-6 mt-2">
+                <p className="text-brand-green font-bold uppercase text-xs tracking-widest mb-2">As Featured In</p>
+                <p className="text-white font-semibold text-lg leading-snug">
+                  Hopkins County Chamber of Commerce — Sulphur Springs, TX
+                </p>
+                <p className="text-gray-400 mt-1 text-sm">
+                  Bryan's entrepreneurial journey was the subject of a three-part feature story, documenting his rise from side hustle to multi-crew operation.
+                </p>
+              </div>
             </div>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-12">
-              {[
-                { label: 'Years Experience', val: '15+' },
-                { label: 'Projects Completed', val: '500+' },
-                { label: 'Client Satisfaction', val: '100%' },
-                { label: 'Emergency Support', val: '24/7' }
-              ].map((stat, i) => (
-                <div key={i} className="border-l-2 border-brand-green pl-6">
-                  <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">{stat.val}</div>
-                  <div className="text-sm font-bold text-gray-400 uppercase tracking-wider">{stat.label}</div>
-                </div>
-              ))}
+
+            {/* Stats + Philosophy */}
+            <div className="flex flex-col gap-12">
+              <div className="grid grid-cols-2 gap-x-8 gap-y-12">
+                {[
+                  { label: 'Years in the Industry', val: '15+' },
+                  { label: 'Projects Completed', val: '500+' },
+                  { label: 'Client Satisfaction', val: '100%' },
+                  { label: 'States Served', val: '3+' }
+                ].map((stat, i) => (
+                  <div key={i} className="border-l-2 border-brand-green pl-6">
+                    <div className="text-4xl md:text-5xl font-display font-bold text-white mb-2">{stat.val}</div>
+                    <div className="text-sm font-bold text-gray-400 uppercase tracking-wider">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+                <p className="text-brand-accent font-bold uppercase text-xs tracking-widest mb-4">The AlaTex Standard</p>
+                <p className="text-xl text-white font-semibold leading-snug mb-3">"What got us here won't get us there."</p>
+                <p className="text-gray-400 text-base leading-relaxed">Same ownership. Same relentless work ethic. A new chapter of commercial-grade execution — built on everything Bryan learned the hard way.</p>
+              </div>
             </div>
+
           </motion.div>
         </div>
       </section>

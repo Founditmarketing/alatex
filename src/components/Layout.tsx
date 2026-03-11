@@ -124,7 +124,7 @@ export default function Layout() {
                         <p className="font-medium max-w-sm mb-4">
                             The premier resource for absolute landscaping excellence across {locName} and beyond.
                         </p>
-                        <p className="text-xs text-gray-600 font-medium">Our Roots: Founded in Texas, our 3rd-generation expertise now proudly serves the Alabama commercial landscape.</p>
+                        <p className="text-xs text-gray-600 font-medium">Our Roots: Founded in Sulphur Springs, TX by owner-operator Bryan Moore — built from a sprinkler repair side hustle into a multi-state landscaping operation.</p>
                     </div>
                     <div>
                         <h4 className="text-white font-bold mb-6 tracking-widest uppercase text-sm">Navigation</h4>
