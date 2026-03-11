@@ -16,7 +16,7 @@ export default function ChickFilACaseStudy() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-gray-50 text-brand-dark font-semibold text-xs uppercase tracking-widest mb-8">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-gray-50 text-brand-accent font-semibold text-xs uppercase tracking-widest mb-8">
                         <MapPin className="w-4 h-4 text-brand-accent" /> Skyland Blvd. Commercial Case Study
                     </div>
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-extrabold text-brand-dark mb-8 tracking-tighter leading-tight">
