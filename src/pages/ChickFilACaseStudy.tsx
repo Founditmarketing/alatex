@@ -56,7 +56,7 @@ export default function ChickFilACaseStudy() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-5xl font-display font-extrabold text-brand-dark tracking-tight">The "Cancellation Prevention" Protocol</h2>
-                        <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">We don't just mow grass. We actively predict and eliminate environmental threats that cause operational downtime.</p>
+                        <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">We actively predict and eliminate environmental threats that cause operational downtime.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
