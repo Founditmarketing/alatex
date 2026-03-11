@@ -67,8 +67,8 @@ export default function ChickFilACaseStudy() {
                             className="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-brand-green/20"
                         >
                             <Clock className="w-10 h-10 text-brand-accent mb-6" />
-                            <h3 className="text-2xl font-bold mb-4">Midnight Deployment</h3>
-                            <p className="text-gray-500 leading-relaxed">All massive-scale irrigation repairs and heavy pruning occur strictly between 1:00 AM and 5:00 AM to ensure zero disruption to drive-thru logistics.</p>
+                            <h3 className="text-2xl font-bold mb-4">Strategic Off-Peak Routing</h3>
+                            <p className="text-gray-500 leading-relaxed">We schedule advanced maintenance and heavy equipment operation during your lowest-traffic windows to minimize interference with peak drive-thru hours.</p>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}
