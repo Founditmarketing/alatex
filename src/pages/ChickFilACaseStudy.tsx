@@ -11,18 +11,15 @@ export default function ChickFilACaseStudy() {
             {/* Hero Section */}
             <section className="relative pt-32 pb-24 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-20">
                 <motion.div
-                    className="w-full md:w-[55%] flex flex-col items-start"
+                    className="w-full md:w-[55%] flex flex-col justify-center"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 bg-gray-50 text-brand-accent font-semibold text-xs uppercase tracking-widest mb-8">
-                        <MapPin className="w-4 h-4 text-brand-accent" /> Skyland Blvd. Commercial Case Study
-                    </div>
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-extrabold text-brand-dark mb-8 tracking-tighter leading-tight">
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-extrabold text-brand-dark mb-8 tracking-tighter leading-tight md:text-center lg:text-left">
                         Zero-Disruption Maintenance for <span className="text-brand-green">High-Volume Retail.</span>
                     </h1>
-                    <p className="text-xl text-gray-500 mb-10 max-w-xl font-medium leading-relaxed">
+                    <p className="text-xl text-gray-500 mb-10 max-w-xl font-medium leading-relaxed md:text-center lg:text-left md:mx-auto lg:mx-0">
                         When Alabama's busiest quick-service restaurants demand absolute operational reliability, they bypass the generic landscapers and mandate AlaTex.
                     </p>
                 </motion.div>
