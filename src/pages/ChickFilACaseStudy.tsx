@@ -96,7 +96,7 @@ export default function ChickFilACaseStudy() {
                     <div className="bg-brand-dark p-12 md:p-16 rounded-[3rem] text-white mt-20 relative overflow-hidden">
                         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10" />
                         <div className="relative z-10">
-                            <h3 className="text-4xl md:text-5xl font-display font-extrabold mb-6 tracking-tight">Demand the Same Standard.</h3>
+                            <h3 className="text-4xl md:text-5xl font-display font-extrabold mb-6 tracking-tight">Upgrade Your Commercial Maintenance.</h3>
                             <p className="text-lg text-gray-400 mb-10 max-w-xl mx-auto">Partner with AlaTex for zero-disruption commercial maintenance tailored to your high-volume property.</p>
                             <Link to="/consultation" className="bg-brand-accent hover:bg-white text-brand-dark px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto w-max group">
                                 Initiate Protocol <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
