@@ -108,9 +108,7 @@ export default function LandingPage() {
               <p className="text-lg text-gray-400 leading-relaxed">
                 That scrappy beginning turned into something real. Before long, Bryan was running multiple trucks, multiple crews, and projects spanning several states. In the early days he'd drive whatever work truck was available — eventually, he had a fleet.
               </p>
-              <p className="text-lg text-gray-400 leading-relaxed">
-                After a fresh start, Bryan is back to one crew and his own truck — but he's been here before and knows exactly how to scale. The foundation, the process, the reputation: all intact. AlaTex is building back.
-              </p>
+
 
               {/* Chamber of Commerce callout */}
               <div className="border-l-4 border-brand-green pl-6 mt-2">
