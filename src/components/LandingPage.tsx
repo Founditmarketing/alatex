@@ -188,7 +188,7 @@ export default function LandingPage() {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="aspect-[4/3] rounded-[2rem] overflow-hidden relative shadow-2xl border border-gray-700">
-              <img src={'/commercial_crew.png'} alt="AlaTex Professional Landscaping Crew" className="w-full h-full object-cover" />
+              <img src={'/commercial_services.png'} alt="AlaTex Commercial Irrigation, French Drains & Maintenance Services" className="w-full h-full object-cover" />
             </div>
 
             <div className="flex flex-col gap-10">
