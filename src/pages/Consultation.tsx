@@ -40,10 +40,10 @@ export default function Consultation() {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-green/30 bg-brand-green/10 text-brand-green font-semibold text-xs uppercase tracking-widest mb-6">
-                        <Building2 className="w-4 h-4" /> Commercial Intake Protocol
+                        <Building2 className="w-4 h-4" /> Project Intake Protocol
                     </div>
                     <h1 className="text-4xl md:text-6xl font-display font-extrabold mb-6 tracking-tighter">Command Your Space.</h1>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto">Absolute reliability starts with data. Provide the specifications of your property in {locCities} to initiate a commercial review.</p>
+                    <p className="text-xl text-gray-400 max-w-2xl mx-auto">Absolute reliability starts with data. Provide the specifications of your property in {locCities} to initiate a project review.</p>
                 </div>
 
                 <div className="bg-[#1a2b16]/50 backdrop-blur-md border border-brand-green/20 p-8 md:p-12 rounded-[2rem] shadow-2xl relative overflow-hidden">
@@ -65,7 +65,7 @@ export default function Consultation() {
                                 exit={{ opacity: 0, x: -20 }}
                                 className="flex flex-col gap-6"
                             >
-                                <h3 className="text-3xl font-display font-bold mb-4">What type of commercial asset are we engineering?</h3>
+                                <h3 className="text-3xl font-display font-bold mb-4">What type of property are we engineering?</h3>
                                 {[
                                     "Corporate Campus / Office Park",
                                     "Retail Center scope (e.g. Chick-fil-A, Strip Malls)",
@@ -168,7 +168,7 @@ export default function Consultation() {
                                 className="flex flex-col gap-6"
                             >
                                 <h3 className="text-3xl font-display font-bold mb-2">Finalize Protocol.</h3>
-                                <p className="text-gray-400 mb-6">Our commercial director will review your parameters and contact you directly to schedule an on-site reconnaissance.</p>
+                                <p className="text-gray-400 mb-6">Our project director will review your parameters and contact you directly to schedule an on-site reconnaissance.</p>
 
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
@@ -194,7 +194,7 @@ export default function Consultation() {
                                     disabled={isSubmitting}
                                     className="mt-8 bg-brand-accent hover:bg-white text-brand-dark w-full py-5 rounded-xl font-bold text-xl transition-colors flex justify-center items-center gap-2"
                                 >
-                                    {isSubmitting ? 'Transmitting Data...' : 'Submit Commercial Profile'}
+                                    {isSubmitting ? 'Transmitting Data...' : 'Submit Project Profile'}
                                 </button>
                                 <p className="text-center text-xs text-gray-500 font-medium mt-4 flex items-center justify-center gap-2">
                                     <CheckCircle2 className="w-4 h-4 text-brand-green" /> End-to-End Encrypted & Confidential
@@ -214,7 +214,7 @@ export default function Consultation() {
                                 </div>
                                 <h3 className="text-4xl font-display font-extrabold text-white tracking-tight">Transmission Secured.</h3>
                                 <p className="text-xl text-gray-400 max-w-lg">
-                                    Your property data has been logged. Our commercial director is reviewing your requirements and will contact you shortly to coordinate the site walkthrough.
+                                    Your property data has been logged. Our project director is reviewing your requirements and will contact you shortly to coordinate the site walkthrough.
                                 </p>
                                 <button onClick={() => window.location.href = '/'} className="mt-8 font-bold text-brand-green hover:text-white transition-colors">
                                     Return to HQ

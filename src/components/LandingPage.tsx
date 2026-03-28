@@ -1,12 +1,11 @@
 import { motion } from 'motion/react';
-import { Phone, ArrowRight, Droplets, Shovel, Building2, Star, CheckCircle2, MapPin } from 'lucide-react';
+import { Phone, ArrowRight, Droplets, Shovel, Building2, Star, CheckCircle2, MapPin, Home } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useGeo } from '../hooks/useGeo';
 
 const services = [
-  { icon: Droplets, title: 'Irrigation & Sprinklers', desc: 'Installation, repair, and maintenance of holistic irrigation systems to ensure absolute vitality.', link: '/services/commercial-irrigation' },
-  { icon: Shovel, title: 'Advanced French Drains', desc: 'Zero soil erosion. No standing water. Engineered drainage solutions that guarantee a thriving, protected landscape.', link: '/services/french-drain-installation' },
-  { icon: Building2, title: 'Commercial Maintenance', desc: 'From sprawling commercial properties to premium corporate facilities, ensuring a pristine and immaculate environment.', link: '/services/commercial-maintenance-tuscaloosa' },
+  { icon: Home, title: 'High-End Residential', desc: 'Bespoke landscaping, advanced drainage, and holistic irrigation systems engineered for premium private estates.', link: '/consultation' },
+  { icon: Building2, title: 'Commercial Landscaping', desc: 'Zero-disruption maintenance, installation, and strict operational accountability for corporate facilities and retail centers.', link: '/services/commercial-maintenance-tuscaloosa' },
 ];
 
 export default function LandingPage() {
@@ -26,7 +25,7 @@ export default function LandingPage() {
           <h1 className="text-[10vw] sm:text-[8vw] lg:text-[4.5vw] xl:text-[5vw] font-display font-extrabold text-brand-dark leading-[1] tracking-tighter mb-8 max-w-3xl">
             Alabama’s Premier Partner for  <br />
             <span className="text-brand-green relative inline-block">
-              High-Stakes
+              Residential & Commercial
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-brand-accent transform origin-left"></div>
             </span> Landscaping
           </h1>
@@ -152,8 +151,8 @@ export default function LandingPage() {
       <section id="services" className="py-24 md:py-32 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16 md:mb-24">
-            <h2 className="text-4xl md:text-6xl font-display font-extrabold text-brand-dark mb-6 tracking-tight">Systematic Outdoor Solutions</h2>
-            <p className="text-xl text-gray-500 font-medium">Bespoke engineering for the soil and climate demands of {locName}.</p>
+            <h2 className="text-4xl md:text-6xl font-display font-extrabold text-brand-dark mb-6 tracking-tight">Residential & Commercial Services</h2>
+            <p className="text-xl text-gray-500 font-medium">Precision-engineered outdoor solutions tailored for high-end estates and premium corporate facilities across {locName}.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 md:gap-10">
             {services.map((service, idx) => (
