@@ -23,12 +23,32 @@ export default function Consultation() {
 
     const nextStep = () => setStep(prev => Math.min(prev + 1, 4));
 
-    // Simulate submission
+    // Form submission via Resend API
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const submitForm = (e: React.FormEvent) => {
+    const [submitError, setSubmitError] = useState('');
+    const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        setTimeout(() => setStep(5), 1500);
+        setSubmitError('');
+
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.error || 'Failed to send. Please try again.');
+            }
+
+            setStep(5);
+        } catch (err: any) {
+            setSubmitError(err.message || 'Something went wrong. Please try again.');
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -196,6 +216,11 @@ export default function Consultation() {
                                 >
                                     {isSubmitting ? 'Transmitting Data...' : 'Submit Project Profile'}
                                 </button>
+                                {submitError && (
+                                    <div className="mt-4 p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-semibold text-center">
+                                        {submitError}
+                                    </div>
+                                )}
                                 <p className="text-center text-xs text-gray-500 font-medium mt-4 flex items-center justify-center gap-2">
                                     <CheckCircle2 className="w-4 h-4 text-brand-green" /> End-to-End Encrypted & Confidential
                                 </p>
