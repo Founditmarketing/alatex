@@ -32,10 +32,11 @@ export default function ChickFilACaseStudy() {
                     transition={{ duration: 1, delay: 0.2 }}
                 >
                     <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative">
-                        {/* Placeholder for the actual Skyland Chick-fil-A site photo */}
-                        <div className="absolute inset-0 bg-brand-dark flex items-center justify-center p-8 text-center text-white/50 border-4 border-brand-green/20">
-                            [Production Component: Insert High-Res Landscape Photo of Chick-fil-A Property]
-                        </div>
+                        <img
+                            src="/chickfila_property.png"
+                            alt="Chick-fil-A Skyland Blvd property with AlaTex-maintained landscaping"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
                     </div>
 
                     {/* Floating Stat Card */}
