@@ -1,4 +1,11 @@
 import React, { useState } from 'react';
+
+// Extend window to support GTM dataLayer
+declare global {
+    interface Window {
+        dataLayer: Record<string, unknown>[];
+    }
+}
 import { motion, AnimatePresence } from 'motion/react';
 import { CheckCircle2, ArrowRight, Building2, User, ChevronRight, Check } from 'lucide-react';
 import { useGeo } from '../hooks/useGeo';
@@ -44,6 +51,10 @@ export default function Consultation() {
             if (!response.ok) {
                 throw new Error(result.error || 'Failed to send. Please try again.');
             }
+
+            // Fire GTM conversion event on successful lead form submission
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: 'lead_form_submit' });
 
             setStep(5);
         } catch (err: any) {

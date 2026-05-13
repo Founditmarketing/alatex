@@ -59,10 +59,10 @@ export default function Layout() {
                     </div>
 
                     <div className="hidden md:flex items-center gap-6">
-                        <div className="flex items-center gap-2 text-brand-dark font-display font-semibold">
+                        <a href="tel:+12053100553" className="flex items-center gap-2 text-brand-dark font-display font-semibold hover:text-brand-green transition-colors">
                             <Phone className="w-5 h-5 text-brand-accent" />
                             {phone}
-                        </div>
+                        </a>
                         <Link to="/consultation" className="bg-brand-dark hover:bg-brand-green text-white px-7 py-3 rounded-full font-bold text-sm transition-all duration-300 shadow-xl shadow-brand-dark/20 flex items-center gap-2 group">
                             Schedule a Site Walkthrough <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
@@ -98,7 +98,7 @@ export default function Layout() {
                             </div>
                         </div>
                         <div className="pt-8 border-t border-gray-100 flex flex-col gap-4">
-                            <a href={`tel:${phone.replace(/\D/g, '')}`} className="flex items-center justify-center gap-2 bg-brand-light text-brand-dark py-4 rounded-2xl font-bold">
+                            <a href="tel:+12053100553" className="flex items-center justify-center gap-2 bg-brand-light text-brand-dark py-4 rounded-2xl font-bold">
                                 <Phone className="w-5 h-5" /> Call {phone}
                             </a>
                             <Link to="/consultation" className="bg-brand-dark text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
@@ -137,7 +137,7 @@ export default function Layout() {
                     <div>
                         <h4 className="text-white font-bold mb-6 tracking-widest uppercase text-sm">Contact</h4>
                         <div className="flex flex-col gap-4 font-semibold text-gray-400">
-                            <span className="text-brand-accent font-bold text-lg">{phone}</span>
+                            <a href="tel:+12053100553" className="text-brand-accent font-bold text-lg hover:text-white transition-colors">{phone}</a>
                             <a href="mailto:Bryan@alatexlandscaping.com" className="hover:text-white transition-colors">Bryan@alatexlandscaping.com</a>
                             <span>Serving {locCities}</span>
                             <span className="flex items-center gap-2 mt-2 text-sm"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Fully Licensed & Insured</span>
