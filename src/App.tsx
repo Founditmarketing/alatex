@@ -6,6 +6,8 @@ import CommercialIrrigation from './pages/CommercialIrrigation';
 import FrenchDrains from './pages/FrenchDrains';
 import Consultation from './pages/Consultation';
 import ChickFilACaseStudy from './pages/ChickFilACaseStudy';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
           <Route path="services/french-drain-installation" element={<FrenchDrains />} />
           <Route path="consultation" element={<Consultation />} />
           <Route path="case-studies/chick-fil-a" element={<ChickFilACaseStudy />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms-of-service" element={<TermsOfService />} />
         </Route>
       </Routes>
     </Router>

@@ -14,7 +14,8 @@ export default function Consultation() {
         name: '',
         company: '',
         phone: '',
-        email: ''
+        email: '',
+        smsOptIn: false
     });
 
     const updateForm = (key: string, value: string) => {
@@ -207,6 +208,41 @@ export default function Consultation() {
                                         <label className="text-xs font-bold tracking-widest uppercase text-brand-green mb-2 block">Email Address</label>
                                         <input required type="email" className="w-full bg-black/20 border border-gray-700 rounded-xl p-4 text-white focus:outline-none focus:border-brand-green transition-colors" placeholder="director@company.com" onChange={e => updateForm('email', e.target.value)} />
                                     </div>
+                                </div>
+
+                                {/* SMS Opt-In */}
+                                <div className="flex items-start gap-4 bg-white/5 border border-gray-700 rounded-2xl p-5 mt-2">
+                                    <div className="relative flex-shrink-0 mt-0.5">
+                                        <input
+                                            id="smsOptIn"
+                                            type="checkbox"
+                                            checked={formData.smsOptIn}
+                                            onChange={e => setFormData(prev => ({ ...prev, smsOptIn: e.target.checked }))}
+                                            className="sr-only"
+                                        />
+                                        <label
+                                            htmlFor="smsOptIn"
+                                            className={`flex items-center justify-center w-6 h-6 rounded-md border-2 cursor-pointer transition-all duration-200 ${
+                                                formData.smsOptIn
+                                                    ? 'bg-brand-green border-brand-green'
+                                                    : 'bg-transparent border-gray-600 hover:border-brand-green'
+                                            }`}
+                                        >
+                                            {formData.smsOptIn && (
+                                                <svg className="w-3.5 h-3.5 text-brand-dark" viewBox="0 0 12 12" fill="none">
+                                                    <path d="M2 6l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            )}
+                                        </label>
+                                    </div>
+                                    <label htmlFor="smsOptIn" className="text-sm text-gray-400 leading-relaxed cursor-pointer">
+                                        <span className="text-white font-semibold block mb-1">SMS Updates (Optional)</span>
+                                        I consent to receive text messages from AlaTex Landscaping at the phone number provided, including project updates and appointment reminders. Message & data rates may apply. Reply{' '}
+                                        <strong className="text-gray-300">STOP</strong> to opt out at any time.{' '}
+                                        <a href="/privacy-policy" className="text-brand-green hover:underline" target="_blank" rel="noopener noreferrer">
+                                            Privacy Policy
+                                        </a>
+                                    </label>
                                 </div>
 
                                 <button
