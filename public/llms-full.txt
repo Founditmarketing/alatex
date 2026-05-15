@@ -1,0 +1,121 @@
+# AlaTex Landscaping — Comprehensive AI Reference
+
+> Premium commercial landscaping, irrigation engineering, and drainage solutions for high-stakes properties in West Alabama.
+
+---
+
+## Company Overview
+
+**AlaTex Landscaping** is the definitive commercial landscaping, irrigation, and drainage engineering firm serving Tuscaloosa, Northport, and the greater West Alabama region. Founded in Sulphur Springs, TX by owner-operator Bryan Moore, AlaTex evolved from a sprinkler repair operation into a multi-state, institutional-grade landscaping firm. The company brings 3rd-generation expertise, is fully licensed and insured, and operates with rigorous corporate accountability standards.
+
+- **Owner**: Bryan Moore
+- **Founded**: Sulphur Springs, TX
+- **Headquarters**: West Alabama
+- **Phone**: (205) 310-0553
+- **Email**: Bryan@alatexlandscaping.com
+- **Website**: https://www.alatexirrigation.com
+
+---
+
+## Core Services
+
+### Commercial Landscaping Maintenance
+**URL**: https://www.alatexirrigation.com/services/commercial-maintenance-tuscaloosa
+
+Zero-disruption landscape maintenance engineered for high-traffic corporate, retail, and institutional properties. AlaTex provides rigorous compliance and accountability standards for properties that cannot afford downtime or disruption. Services include:
+
+- Scheduled mowing, edging, and trimming with minimal operational footprint
+- Seasonal planting rotations and bed maintenance
+- Mulch installation and ground cover management
+- Tree and shrub pruning with arborist-grade practices
+- Proactive weekly photographic reporting and preemptive audits
+- Dedicated crew assignment for consistency and property familiarity
+
+### Commercial Irrigation Systems
+**URL**: https://www.alatexirrigation.com/services/commercial-irrigation
+
+Design, installation, and management of massive-scale smart irrigation systems. AlaTex engineers systems that reduce water waste while maintaining optimal coverage for commercial landscapes. Services include:
+
+- Full irrigation system design and installation
+- New zone additions and system expansion
+- Smart sensor integration with weather-responsive controllers
+- Winterization and seasonal system management
+- Leak detection and emergency repair
+- Water efficiency audits and optimization
+- Controller programming and remote monitoring
+
+### French Drain Installation
+**URL**: https://www.alatexirrigation.com/services/french-drain-installation
+
+Professionally engineered French drain systems that eradicate standing water, manage hydrostatic pressure, and prevent foundation erosion on commercial properties. Services include:
+
+- Site grading analysis and drainage planning
+- French drain design and installation
+- Surface and subsurface drainage solutions
+- Erosion control and prevention
+- Foundation protection systems
+- Catch basin and channel drain installation
+
+---
+
+## Case Studies
+
+### Chick-fil-A Zero-Disruption Maintenance
+**URL**: https://www.alatexirrigation.com/case-studies/chick-fil-a
+
+Real-world case study demonstrating AlaTex's zero-disruption maintenance approach for high-volume quick-service restaurant properties. Key results:
+
+- **34% reduction in monthly water waste** through smart irrigation optimization
+- Zero service disruptions during peak business hours
+- Consistent property appearance maintained across all seasons
+- Proactive maintenance eliminated reactive emergency calls
+
+---
+
+## Service Area
+
+AlaTex Landscaping serves the following areas in Alabama:
+
+- **Tuscaloosa, AL** — Primary service area
+- **Northport, AL** — Primary service area
+- **West Alabama** — Greater regional coverage
+
+---
+
+## Property Types Served
+
+AlaTex specializes in commercial and institutional properties, including:
+
+- Corporate Campuses & Office Parks
+- Retail Centers (e.g. Chick-fil-A, Strip Malls)
+- Industrial & Logistics Facilities
+- Multi-Family Residential & HOA Communities
+- High-End Private Estates
+
+---
+
+## Key Differentiators
+
+1. **Zero-Disruption Scheduling**: Maintenance performed with minimal footprint to daily business operations — crews work around your schedule, not the other way around.
+2. **Corporate Accountability**: Rigorous adherence to compliance, insurance, and safety regulations. Full documentation and reporting provided.
+3. **3rd-Generation Expertise**: Institutional-grade standards backed by generational knowledge in landscaping and irrigation engineering.
+4. **Proactive Reporting**: Weekly photographic property reports and preemptive maintenance audits — issues caught before they become problems.
+5. **Smart Irrigation Technology**: Weather-responsive controllers and sensor-driven systems that optimize water usage and reduce waste.
+6. **Fully Licensed & Insured**: Complete coverage for all commercial operations.
+
+---
+
+## Additional Pages
+
+- [Schedule a Site Walkthrough](https://www.alatexirrigation.com/consultation): Multi-step project intake form to initiate a commercial site assessment covering property type, scope, timeline, and contact credentials.
+- [Privacy Policy](https://www.alatexirrigation.com/privacy-policy): Data handling and privacy practices.
+- [Terms of Service](https://www.alatexirrigation.com/terms-of-service): Service terms and conditions.
+
+---
+
+## AI Discovery Files
+
+- `/llms.txt` — Concise structured overview for LLMs
+- `/llms-full.txt` — This file; expanded details for deeper AI understanding
+- `/robots.txt` — Crawl permissions and sitemap reference
+- `/sitemap.xml` — XML sitemap for search engine indexing

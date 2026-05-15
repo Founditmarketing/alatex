@@ -1,0 +1,11 @@
+# AlaTex Landscaping - robots.txt
+# https://www.alatexirrigation.com
+
+User-agent: *
+Allow: /
+
+# AI & LLM Discovery
+# See https://www.alatexirrigation.com/llms.txt for structured AI-readable content
+# See https://www.alatexirrigation.com/llms-full.txt for expanded content
+
+Sitemap: https://www.alatexirrigation.com/sitemap.xml
