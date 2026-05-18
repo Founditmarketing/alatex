@@ -15,7 +15,7 @@ export default function LandingPage() {
     <>
 
       {/* SEO: Visually-hidden H1 for search engines */}
-      <h1 className="sr-only">Commercial Landscaping Services in Tuscaloosa &amp; Northport, Alabama</h1>
+      <h1 className="sr-only">AlaTex Landscaping | Commercial Landscaping Tuscaloosa AL</h1>
 
       {/* SEO: Internal navigation links */}
       <nav aria-label="Page sections" className="sr-only">
