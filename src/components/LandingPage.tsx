@@ -14,6 +14,16 @@ export default function LandingPage() {
   return (
     <>
 
+      {/* SEO: Visually-hidden H1 for search engines */}
+      <h1 className="sr-only">Commercial Landscaping Services in Tuscaloosa &amp; Northport, Alabama</h1>
+
+      {/* SEO: Internal navigation links */}
+      <nav aria-label="Page sections" className="sr-only">
+        <a href="#services">Services</a>
+        <a href="#our-story">About</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+
       {/* Cinematic Hero */}
       <section className="relative pt-32 pb-16 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         <motion.div
@@ -22,15 +32,18 @@ export default function LandingPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h1 className="text-[10vw] sm:text-[8vw] lg:text-[4.5vw] xl:text-[5vw] font-display font-extrabold text-brand-dark leading-[1] tracking-tighter mb-8 max-w-3xl">
-            Alabama’s Premier Partner for  <br />
+          <h2 className="text-[10vw] sm:text-[8vw] lg:text-[4.5vw] xl:text-[5vw] font-display font-extrabold text-brand-dark leading-[1] tracking-tighter mb-8 max-w-3xl">
+            Alabama's Premier Partner for  <br />
             <span className="text-brand-green relative inline-block">
-              Residential & Commercial
+              Residential &amp; Commercial
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-brand-accent transform origin-left"></div>
             </span> Landscaping
-          </h1>
+          </h2>
           <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-xl font-medium leading-relaxed">
             From local landmarks like Chick-fil-A to your private estate — built from the ground up by owner-operator Bryan Moore, with real-world expertise earned one job at a time.
+          </p>
+          <p className="text-sm text-gray-400 mb-6 font-medium flex items-center gap-1">
+            <span aria-hidden="true">📍</span> Located in Tuscaloosa, Alabama, serving commercial properties throughout West Alabama
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto">
             <Link to="/consultation" className="w-full sm:w-auto bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3">
