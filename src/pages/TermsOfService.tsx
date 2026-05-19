@@ -1,11 +1,22 @@
+import React from 'react';
 import { motion } from 'motion/react';
 import { FileText, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function TermsOfService() {
     const lastUpdated = 'May 12, 2025';
 
     return (
+        <>
+        <Helmet>
+            <title>Terms of Service | AlaTex Landscaping Tuscaloosa AL</title>
+            <meta name="description" content="Terms of Service for AlaTex Landscaping. Professional commercial and residential landscaping in Tuscaloosa and Northport, Alabama. Licensed and insured." />
+            <link rel="canonical" href="https://alatex.vercel.app/terms-of-service" />
+            <meta property="og:title" content="Terms of Service | AlaTex Landscaping" />
+            <meta property="og:description" content="Terms of Service for AlaTex Landscaping — professional landscaping in Tuscaloosa, Alabama." />
+            <meta property="og:url" content="https://alatex.vercel.app/terms-of-service" />
+        </Helmet>
         <div className="min-h-screen bg-[#F9FAFB] pt-28 pb-24">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
@@ -160,6 +171,7 @@ export default function TermsOfService() {
                 </motion.div>
             </div>
         </div>
+        </>
     );
 }
 

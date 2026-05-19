@@ -1,10 +1,20 @@
 import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2, TrendingDown, Clock, ShieldCheck, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function ChickFilACaseStudy() {
 
     return (
+        <>
+        <Helmet>
+            <title>Chick-fil-A Commercial Landscaping Case Study | AlaTex Tuscaloosa</title>
+            <meta name="description" content="How AlaTex Landscaping delivered zero-disruption commercial maintenance for Chick-fil-A on Skyland Blvd — 34% reduction in water waste. Serving Tuscaloosa, AL." />
+            <link rel="canonical" href="https://alatex.vercel.app/case-studies/chick-fil-a" />
+            <meta property="og:title" content="Chick-fil-A Case Study | AlaTex Landscaping" />
+            <meta property="og:description" content="Zero-disruption commercial landscaping for high-volume retail. See how AlaTex delivered results for Chick-fil-A in Tuscaloosa, Alabama." />
+            <meta property="og:url" content="https://alatex.vercel.app/case-studies/chick-fil-a" />
+        </Helmet>
         <div className="bg-white min-h-screen">
             {/* Hero Section */}
             <section className="relative pt-32 pb-24 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-20">
@@ -107,5 +117,6 @@ export default function ChickFilACaseStudy() {
                 </div>
             </section>
         </div>
+        </>
     );
 }

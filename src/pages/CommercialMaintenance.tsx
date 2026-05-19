@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Phone, ArrowRight, Building2, CheckCircle2, Factory, ShieldCheck, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useGeo } from '../hooks/useGeo';
+import { Helmet } from 'react-helmet-async';
 
 export default function CommercialMaintenance() {
     const { locCities } = useGeo();
@@ -9,6 +10,14 @@ export default function CommercialMaintenance() {
 
     return (
         <>
+        <Helmet>
+            <title>Commercial Landscaping Maintenance Tuscaloosa AL | AlaTex Landscaping</title>
+            <meta name="description" content="Zero-disruption commercial landscaping maintenance in Tuscaloosa, Alabama. AlaTex Landscaping serves corporate parks, retail centers, and commercial facilities. Call (205) 310-0553." />
+            <link rel="canonical" href="https://alatex.vercel.app/services/commercial-maintenance-tuscaloosa" />
+            <meta property="og:title" content="Commercial Landscaping Maintenance Tuscaloosa | AlaTex" />
+            <meta property="og:description" content="Corporate-grade commercial landscaping maintenance in Tuscaloosa, AL. Zero disruption, full accountability." />
+            <meta property="og:url" content="https://alatex.vercel.app/services/commercial-maintenance-tuscaloosa" />
+        </Helmet>
             <section className="relative pt-32 pb-16 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

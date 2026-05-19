@@ -9,6 +9,7 @@ declare global {
 import { motion, AnimatePresence } from 'motion/react';
 import { CheckCircle2, ArrowRight, Building2, User, ChevronRight, Check } from 'lucide-react';
 import { useGeo } from '../hooks/useGeo';
+import { Helmet } from 'react-helmet-async';
 
 export default function Consultation() {
     const { locCities } = useGeo();
@@ -64,6 +65,15 @@ export default function Consultation() {
     };
 
     return (
+        <>
+        <Helmet>
+            <title>Free Landscaping Consultation Tuscaloosa AL | AlaTex Landscaping</title>
+            <meta name="description" content="Request a free commercial or residential landscaping consultation with AlaTex Landscaping in Tuscaloosa, Alabama. Zero-disruption projects. Call (205) 310-0553." />
+            <link rel="canonical" href="https://alatex.vercel.app/consultation" />
+            <meta property="og:title" content="Schedule a Consultation | AlaTex Landscaping" />
+            <meta property="og:description" content="Start your landscaping project in Tuscaloosa, AL. Commercial and residential specialists. Contact AlaTex Landscaping today." />
+            <meta property="og:url" content="https://alatex.vercel.app/consultation" />
+        </Helmet>
         <div className="min-h-screen bg-brand-dark text-white pt-32 pb-24 relative overflow-hidden flex flex-col justify-center">
             {/* Atmospheric Background */}
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20" />
@@ -297,5 +307,6 @@ export default function Consultation() {
                 </div>
             </div>
         </div>
+        </>
     );
 }
