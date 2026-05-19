@@ -14,9 +14,6 @@ export default function LandingPage() {
   return (
     <>
 
-      {/* SEO: Visually-hidden H1 for search engines */}
-      <h1 className="sr-only">AlaTex Landscaping | Commercial Landscaping Tuscaloosa AL</h1>
-
       {/* SEO: Internal navigation links */}
       <nav aria-label="Page sections" className="sr-only">
         <a href="#services">Services</a>
@@ -32,13 +29,13 @@ export default function LandingPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <h2 className="text-[10vw] sm:text-[8vw] lg:text-[4.5vw] xl:text-[5vw] font-display font-extrabold text-brand-dark leading-[1] tracking-tighter mb-8 max-w-3xl">
+          <h1 className="text-[10vw] sm:text-[8vw] lg:text-[4.5vw] xl:text-[5vw] font-display font-extrabold text-brand-dark leading-[1] tracking-tighter mb-8 max-w-3xl">
             Alabama's Premier Partner for  <br />
             <span className="text-brand-green relative inline-block">
               Residential &amp; Commercial
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-brand-accent transform origin-left"></div>
             </span> Landscaping
-          </h2>
+          </h1>
           <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-xl font-medium leading-relaxed">
             From local landmarks like Chick-fil-A to your private estate — built from the ground up by owner-operator Bryan Moore, with real-world expertise earned one job at a time.
           </p>
@@ -62,7 +59,7 @@ export default function LandingPage() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
         >
           <div className="aspect-[4/5] md:aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl relative">
-            <img src={'/commercial_hero.png'} alt="Premium Commercial Landscaping Strategy" className="w-full h-full object-cover" />
+            <img src={'/commercial_hero.png'} alt="Premium Commercial Landscaping Strategy" className="w-full h-full object-cover" fetchPriority="high" width="800" height="1000" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"></div>
           </div>
 
@@ -200,7 +197,7 @@ export default function LandingPage() {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="aspect-[4/3] rounded-[2rem] overflow-hidden relative shadow-2xl border border-gray-700">
-              <img src={'/commercial_services.png'} alt="AlaTex Commercial Irrigation, French Drains & Maintenance Services" className="w-full h-full object-cover" />
+              <img src={'/commercial_services.png'} alt="AlaTex Commercial Irrigation, French Drains & Maintenance Services" className="w-full h-full object-cover" loading="lazy" width="800" height="600" />
             </div>
 
             <div className="flex flex-col gap-10">

@@ -1,41 +1,48 @@
 # AlaTex Landscaping
-> Commercial landscaping, Tuscaloosa, Alabama
+> landscaping business, Tuscaloosa, Alabama
 
-AlaTex Landscaping is the definitive commercial landscaping, irrigation, and drainage engineering firm operating exclusively in West Alabama, specifically Tuscaloosa and Northport. We specialize in high-stakes commercial property maintenance, advanced French drain installation, and massive-scale smart irrigation systems with 3rd-generation expertise.
+AlaTex Landscaping is Alabama's premier partner for high-stakes commercial landscaping, irrigation, and drainage solutions. Founded by owner-operator Bryan Moore, the company has grown from a sprinkler repair side hustle to a multi-state operation serving premium commercial facilities and luxury estates.
 
 ## Services
 - Commercial Landscaping Maintenance
+- High-End Residential Landscaping
 - French Drain Installation
 - Commercial Irrigation Systems
 - Hydrostatic Pressure Management
-- Corporate Property Maintenance
+- Zero-Disruption Operations
 
 ## Service Area
 Tuscaloosa, Alabama and surrounding areas including Northport and West Alabama
 
 ## Contact
 - Phone: (205) 310-0553
-- Address: Tuscaloosa, AL
+- Address: Tuscaloosa, Alabama
 - Website: https://alatex.vercel.app
 
 ## Key Pages
-- Home Page(/): Commercial landscaping services and company overview
+- Home (/): Main landing page showcasing services and company story
+- Case Studies (/case-studies/chick-fil-a): Commercial project examples
+- Consultation (/consultation): Service inquiry and scheduling
+- Commercial Services (/services/commercial-maintenance-tuscaloosa): Detailed commercial offerings
+- Privacy Policy (/privacy-policy): Data protection information
+- Terms of Service (/terms-of-service): Service agreement terms
 
 ## About
-AlaTex Landscaping brings institutional-scale commercial landscaping expertise to West Alabama with 3rd-generation experience. We maintain rigorous compliance standards and deliver zero-disruption operations for corporate parks, retail centers, and luxury estates, specializing in advanced drainage solutions and smart irrigation systems.
+Bryan Moore built AlaTex Landscaping from the ground up, starting as a sprinkler repair side hustle while working in corporate supply management. With over 15 years in the industry and 500+ completed projects, the company maintains a 100% client satisfaction rate. Featured in the Hopkins County Chamber of Commerce for entrepreneurial excellence, AlaTex brings institutional-scale expertise to Alabama's commercial and residential landscaping market.
 
 ## Frequently Asked Questions
+
 **What areas do you serve?**
-We serve Tuscaloosa, Northport, and the greater West Alabama region exclusively.
+We primarily serve Tuscaloosa and Northport, Alabama, with projects extending throughout West Alabama.
 
-**Do you work on commercial properties?**
-Yes, we specialize exclusively in high-stakes commercial landscaping for corporate parks, retail centers, and luxury estates.
+**Do you handle both residential and commercial projects?**
+Yes, we specialize in high-end residential estates and premium commercial facilities, including corporate parks and retail centers.
 
-**What makes your French drain installation different?**
-We use advanced engineering to stop hydrostatic erosion with institutional-grade materials and precision installation techniques.
+**What makes your drainage solutions different?**
+We engineer advanced French drain systems specifically designed to combat hydrostatic pressure and prevent erosion, using institutional-grade materials and techniques.
+
+**How do you ensure zero-disruption operations?**
+We strategically phase all landscaping deployment to ensure critical business operations continue without interruption, adhering strictly to corporate regulations and safety protocols.
 
 **Are you licensed and insured?**
-Yes, we are fully licensed and insured with rigorous compliance standards for commercial work.
-
-**What is your maintenance approach?**
-We provide zero-disruption maintenance operations designed to meet corporate accountability standards.
+Yes, AlaTex Landscaping is fully licensed and insured, meeting all regulatory requirements for commercial and residential landscaping operations.
