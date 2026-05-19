@@ -139,7 +139,10 @@ export default function Layout() {
                         <div className="flex flex-col gap-4 font-semibold text-gray-400">
                             <a href="tel:+12053100553" className="text-brand-accent font-bold text-lg hover:text-white transition-colors">{phone}</a>
                             <a href="mailto:Bryan@alatexlandscaping.com" className="hover:text-white transition-colors">Bryan@alatexlandscaping.com</a>
-                            <span>Serving {locCities}</span>
+                            <address className="not-italic text-sm leading-relaxed">
+                                Tuscaloosa, AL 35401<br />
+                                Serving {locCities}
+                            </address>
                             <span className="flex items-center gap-2 mt-2 text-sm"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Fully Licensed & Insured</span>
                         </div>
                     </div>
