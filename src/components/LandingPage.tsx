@@ -59,7 +59,7 @@ export default function LandingPage() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
         >
           <div className="aspect-[4/5] md:aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl relative">
-            <img src={'/commercial_hero.png'} alt="Premium Commercial Landscaping Strategy" className="w-full h-full object-cover" fetchPriority="high" width="800" height="1000" />
+            <img src={'/commercial_hero.webp'} alt="Premium Commercial Landscaping Strategy" className="w-full h-full object-cover" fetchPriority="high" width="800" height="1000" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent"></div>
           </div>
 
@@ -197,7 +197,7 @@ export default function LandingPage() {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="aspect-[4/3] rounded-[2rem] overflow-hidden relative shadow-2xl border border-gray-700">
-              <img src={'/commercial_services.png'} alt="AlaTex Commercial Irrigation, French Drains & Maintenance Services" className="w-full h-full object-cover" loading="lazy" width="800" height="600" />
+              <img src={'/commercial_services.webp'} alt="AlaTex Commercial Irrigation, French Drains & Maintenance Services" className="w-full h-full object-cover" loading="lazy" width="800" height="600" />
             </div>
 
             <div className="flex flex-col gap-10">
