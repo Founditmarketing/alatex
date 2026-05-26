@@ -13,14 +13,14 @@
 - **Headquarters**: West Alabama
 - **Phone**: (205) 310-0553
 - **Email**: Bryan@alatexlandscaping.com
-- **Website**: https://www.alatexirrigation.com
+- **Website**: https://alatex.vercel.app
 
 ---
 
 ## Core Services
 
 ### Commercial Landscaping Maintenance
-**URL**: https://www.alatexirrigation.com/services/commercial-maintenance-tuscaloosa
+**URL**: https://alatex.vercel.app/services/commercial-maintenance-tuscaloosa
 
 Zero-disruption landscape maintenance engineered for high-traffic corporate, retail, and institutional properties. AlaTex provides rigorous compliance and accountability standards for properties that cannot afford downtime or disruption. Services include:
 
@@ -32,7 +32,7 @@ Zero-disruption landscape maintenance engineered for high-traffic corporate, ret
 - Dedicated crew assignment for consistency and property familiarity
 
 ### Commercial Irrigation Systems
-**URL**: https://www.alatexirrigation.com/services/commercial-irrigation
+**URL**: https://alatex.vercel.app/services/commercial-irrigation
 
 Design, installation, and management of massive-scale smart irrigation systems. AlaTex engineers systems that reduce water waste while maintaining optimal coverage for commercial landscapes. Services include:
 
@@ -45,7 +45,7 @@ Design, installation, and management of massive-scale smart irrigation systems. 
 - Controller programming and remote monitoring
 
 ### French Drain Installation
-**URL**: https://www.alatexirrigation.com/services/french-drain-installation
+**URL**: https://alatex.vercel.app/services/french-drain-installation
 
 Professionally engineered French drain systems that eradicate standing water, manage hydrostatic pressure, and prevent foundation erosion on commercial properties. Services include:
 
@@ -61,7 +61,7 @@ Professionally engineered French drain systems that eradicate standing water, ma
 ## Case Studies
 
 ### Chick-fil-A Zero-Disruption Maintenance
-**URL**: https://www.alatexirrigation.com/case-studies/chick-fil-a
+**URL**: https://alatex.vercel.app/case-studies/chick-fil-a
 
 Real-world case study demonstrating AlaTex's zero-disruption maintenance approach for high-volume quick-service restaurant properties. Key results:
 
@@ -107,9 +107,9 @@ AlaTex specializes in commercial and institutional properties, including:
 
 ## Additional Pages
 
-- [Schedule a Site Walkthrough](https://www.alatexirrigation.com/consultation): Multi-step project intake form to initiate a commercial site assessment covering property type, scope, timeline, and contact credentials.
-- [Privacy Policy](https://www.alatexirrigation.com/privacy-policy): Data handling and privacy practices.
-- [Terms of Service](https://www.alatexirrigation.com/terms-of-service): Service terms and conditions.
+- [Schedule a Site Walkthrough](https://alatex.vercel.app/consultation): Multi-step project intake form to initiate a commercial site assessment covering property type, scope, timeline, and contact credentials.
+- [Privacy Policy](https://alatex.vercel.app/privacy-policy): Data handling and privacy practices.
+- [Terms of Service](https://alatex.vercel.app/terms-of-service): Service terms and conditions.
 
 ---
 
