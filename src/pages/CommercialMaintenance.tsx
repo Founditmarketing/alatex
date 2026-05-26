@@ -13,10 +13,10 @@ export default function CommercialMaintenance() {
         <Helmet>
             <title>Commercial Landscaping Maintenance Tuscaloosa AL | AlaTex Landscaping</title>
             <meta name="description" content="Zero-disruption commercial landscaping maintenance in Tuscaloosa, Alabama. AlaTex Landscaping serves corporate parks, retail centers, and commercial facilities. Call (205) 310-0553." />
-            <link rel="canonical" href="https://alatex.vercel.app/services/commercial-maintenance-tuscaloosa" />
+            <link rel="canonical" href="https://fourseasonstexas.com/services/commercial-maintenance-tuscaloosa" />
             <meta property="og:title" content="Commercial Landscaping Maintenance Tuscaloosa | AlaTex" />
             <meta property="og:description" content="Corporate-grade commercial landscaping maintenance in Tuscaloosa, AL. Zero disruption, full accountability." />
-            <meta property="og:url" content="https://alatex.vercel.app/services/commercial-maintenance-tuscaloosa" />
+            <meta property="og:url" content="https://fourseasonstexas.com/services/commercial-maintenance-tuscaloosa" />
         </Helmet>
             <section className="relative pt-32 pb-16 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
                 <motion.div

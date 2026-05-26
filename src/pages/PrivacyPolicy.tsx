@@ -12,10 +12,10 @@ export default function PrivacyPolicy() {
         <Helmet>
             <title>Privacy Policy | AlaTex Landscaping Tuscaloosa AL</title>
             <meta name="description" content="Privacy Policy for AlaTex Landscaping. Learn how we protect your data. Commercial and residential landscaping in Tuscaloosa and Northport, Alabama." />
-            <link rel="canonical" href="https://alatex.vercel.app/privacy-policy" />
+            <link rel="canonical" href="https://fourseasonstexas.com/privacy-policy" />
             <meta property="og:title" content="Privacy Policy | AlaTex Landscaping" />
             <meta property="og:description" content="Privacy Policy for AlaTex Landscaping — professional landscaping in Tuscaloosa, Alabama." />
-            <meta property="og:url" content="https://alatex.vercel.app/privacy-policy" />
+            <meta property="og:url" content="https://fourseasonstexas.com/privacy-policy" />
         </Helmet>
         <div className="min-h-screen bg-[#F9FAFB] pt-28 pb-24">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

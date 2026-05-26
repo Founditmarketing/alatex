@@ -69,10 +69,10 @@ export default function Consultation() {
         <Helmet>
             <title>Free Landscaping Consultation Tuscaloosa AL | AlaTex Landscaping</title>
             <meta name="description" content="Request a free commercial or residential landscaping consultation with AlaTex Landscaping in Tuscaloosa, Alabama. Zero-disruption projects. Call (205) 310-0553." />
-            <link rel="canonical" href="https://alatex.vercel.app/consultation" />
+            <link rel="canonical" href="https://fourseasonstexas.com/consultation" />
             <meta property="og:title" content="Schedule a Consultation | AlaTex Landscaping" />
             <meta property="og:description" content="Start your landscaping project in Tuscaloosa, AL. Commercial and residential specialists. Contact AlaTex Landscaping today." />
-            <meta property="og:url" content="https://alatex.vercel.app/consultation" />
+            <meta property="og:url" content="https://fourseasonstexas.com/consultation" />
         </Helmet>
         <div className="min-h-screen bg-brand-dark text-white pt-32 pb-24 relative overflow-hidden flex flex-col justify-center">
             {/* Atmospheric Background */}

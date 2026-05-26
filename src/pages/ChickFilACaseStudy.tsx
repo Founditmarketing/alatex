@@ -10,10 +10,10 @@ export default function ChickFilACaseStudy() {
         <Helmet>
             <title>Chick-fil-A Commercial Landscaping Case Study | AlaTex Tuscaloosa</title>
             <meta name="description" content="How AlaTex Landscaping delivered zero-disruption commercial maintenance for Chick-fil-A on Skyland Blvd — 34% reduction in water waste. Serving Tuscaloosa, AL." />
-            <link rel="canonical" href="https://alatex.vercel.app/case-studies/chick-fil-a" />
+            <link rel="canonical" href="https://fourseasonstexas.com/case-studies/chick-fil-a" />
             <meta property="og:title" content="Chick-fil-A Case Study | AlaTex Landscaping" />
             <meta property="og:description" content="Zero-disruption commercial landscaping for high-volume retail. See how AlaTex delivered results for Chick-fil-A in Tuscaloosa, Alabama." />
-            <meta property="og:url" content="https://alatex.vercel.app/case-studies/chick-fil-a" />
+            <meta property="og:url" content="https://fourseasonstexas.com/case-studies/chick-fil-a" />
         </Helmet>
         <div className="bg-white min-h-screen">
             {/* Hero Section */}

@@ -33,4 +33,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://alatex.vercel.app/sitemap.xml
+Sitemap: https://fourseasonstexas.com/sitemap.xml
