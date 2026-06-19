@@ -3,7 +3,7 @@ import Layout from './components/Layout';
 import LandingPage from './components/LandingPage';
 import CommercialMaintenance from './pages/CommercialMaintenance';
 import CommercialIrrigation from './pages/CommercialIrrigation';
-import FrenchDrains from './pages/FrenchDrains';
+import DrainageErosionControl from './pages/DrainageErosionControl';
 import Consultation from './pages/Consultation';
 import ChickFilACaseStudy from './pages/ChickFilACaseStudy';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -13,6 +13,8 @@ import ServicePage from './pages/ServicePage';
 import CommercialServices from './pages/CommercialServices';
 import About from './pages/About';
 import Reviews from './pages/Reviews';
+import GroundsMaintenance from './pages/GroundsMaintenance';
+import PropertyManagement from './pages/PropertyManagement';
 
 export default function App() {
   return (
@@ -21,9 +23,11 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<LandingPage />} />
           <Route path="services/commercial" element={<CommercialServices />} />
-          <Route path="services/commercial-maintenance-tuscaloosa" element={<CommercialMaintenance />} />
+          <Route path="services/grounds-maintenance-contracts" element={<GroundsMaintenance />} />
+          <Route path="services/property-management-accounts" element={<PropertyManagement />} />
+          <Route path="services/zero-disruption-maintenance" element={<CommercialMaintenance />} />
           <Route path="services/commercial-irrigation" element={<CommercialIrrigation />} />
-          <Route path="services/french-drain-installation" element={<FrenchDrains />} />
+          <Route path="services/drainage-erosion-control" element={<DrainageErosionControl />} />
           <Route path="services/:slug" element={<ServicePage />} />
           <Route path="landscaping/:slug" element={<LocationPage />} />
           <Route path="consultation" element={<Consultation />} />

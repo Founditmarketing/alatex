@@ -10,7 +10,7 @@ const services = [
   { icon: Building2, title: 'Commercial Landscaping', desc: 'Grounds-maintenance contracts, commercial irrigation, and property-management accounts — one accountable partner.', link: '/services/commercial' },
   { icon: Hammer, title: 'Landscape Construction', desc: 'Patios, walkways, outdoor living spaces, and full landscape installation — built from the ground up.', link: '/services/landscape-construction' },
   { icon: Layers, title: 'Retaining Walls', desc: 'Engineered segmental, boulder, and structural retaining walls with built-in drainage to hold slopes and stop erosion.', link: '/services/retaining-walls' },
-  { icon: Droplets, title: 'Drainage & French Drains', desc: 'French drains, regrading, and catch basins that eradicate standing water and protect foundations.', link: '/services/french-drain-installation' },
+  { icon: Droplets, title: 'Drainage & Erosion Control', desc: 'French drains, regrading, and catch basins that protect foundations, parking areas, and landscaping from standing water.', link: '/services/drainage-erosion-control' },
   { icon: Lightbulb, title: 'Outdoor Lighting', desc: 'Low-voltage landscape and architectural lighting for beauty, safety, and security after dark.', link: '/services/outdoor-lighting' },
   { icon: Wrench, title: 'Sprinkler Repair', desc: 'Fast repair, tuning, and upgrades for irrigation systems — broken heads, leaks, valves, and controllers.', link: '/services/sprinkler-repair' },
 ];

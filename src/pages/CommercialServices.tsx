@@ -11,12 +11,12 @@ const description =
   'AlaTex provides commercial landscaping and grounds maintenance for property managers and facilities directors across Greater Birmingham and West Alabama — maintenance contracts, commercial irrigation, and property-management accounts. Call (205) 310-0553.';
 
 const scope = [
-  { icon: Trees, title: 'Grounds Maintenance Contracts', desc: 'Scheduled mowing, edging, pruning, mulch, and seasonal color on a documented, year-round contract — your property always represented perfectly.' },
+  { icon: Trees, title: 'Grounds Maintenance Contracts', desc: 'Scheduled mowing, edging, pruning, mulch, and seasonal color on a documented, year-round contract — your property always represented perfectly.', link: '/services/grounds-maintenance-contracts' },
   { icon: Droplets, title: 'Commercial Irrigation', desc: 'Design, installation, repair, and smart-controller management of large-scale irrigation systems that cut water waste.', link: '/services/commercial-irrigation' },
-  { icon: Building2, title: 'Property Management Accounts', desc: 'A single accountable vendor for multi-site portfolios, office parks, retail centers, and HOA communities.' },
+  { icon: Building2, title: 'Property Management Accounts', desc: 'A single accountable vendor for multi-site portfolios, office parks, retail centers, and HOA communities.', link: '/services/property-management-accounts' },
   { icon: Hammer, title: 'Landscape Construction & Hardscapes', desc: 'Hardscapes, retaining walls, and full landscape installation that elevate the curb appeal of commercial properties.', link: '/services/landscape-construction' },
-  { icon: Droplets, title: 'Drainage & Erosion Control', desc: 'French drains, regrading, and catch basins that protect foundations, parking areas, and landscaping from standing water.', link: '/services/french-drain-installation' },
-  { icon: ClipboardCheck, title: 'Zero-Disruption Maintenance', desc: 'Crews that work around your business hours and brand standards, with proactive reporting on every visit.', link: '/services/commercial-maintenance-tuscaloosa' },
+  { icon: Droplets, title: 'Drainage & Erosion Control', desc: 'French drains, regrading, and catch basins that protect foundations, parking areas, and landscaping from standing water.', link: '/services/drainage-erosion-control' },
+  { icon: ClipboardCheck, title: 'Zero-Disruption Maintenance', desc: 'Crews that work around your business hours and brand standards, with proactive reporting on every visit.', link: '/services/zero-disruption-maintenance' },
 ];
 
 const why = [

@@ -165,11 +165,11 @@ export interface Service {
 export const SERVICES: Service[] = [
   {
     slug: 'landscape-construction',
-    name: 'Landscape Construction',
-    short: 'Hardscapes, patios & full landscape installation.',
-    tagline: 'Hardscapes, outdoor living & full landscape installation',
+    name: 'Landscape Construction & Hardscapes',
+    short: 'Hardscapes, retaining walls & full landscape installation.',
+    tagline: 'Hardscapes, retaining walls & full landscape installation',
     intro:
-      'From patios and walkways to complete outdoor living spaces, AlaTex designs and builds landscape construction projects that transform properties across Greater Birmingham and West Alabama.',
+      'Hardscapes, retaining walls, and full landscape installation that elevate the curb appeal of commercial properties.',
     bullets: [
       'Patios, walkways & paver hardscapes',
       'Outdoor living spaces, fire features & seating walls',
@@ -269,13 +269,15 @@ export const SERVICES: Service[] = [
 // the existing pages so every service the client named is one click away.
 export const SERVICE_NAV: { name: string; href: string }[] = [
   { name: 'Commercial Landscaping', href: '/services/commercial' },
-  { name: 'Landscape Construction', href: '/services/landscape-construction' },
+  { name: 'Grounds Maintenance Contracts', href: '/services/grounds-maintenance-contracts' },
+  { name: 'Property Management Accounts', href: '/services/property-management-accounts' },
+  { name: 'Landscape Construction & Hardscapes', href: '/services/landscape-construction' },
   { name: 'Retaining Walls', href: '/services/retaining-walls' },
-  { name: 'Drainage & French Drains', href: '/services/french-drain-installation' },
+  { name: 'Drainage & Erosion Control', href: '/services/drainage-erosion-control' },
   { name: 'Outdoor Lighting', href: '/services/outdoor-lighting' },
   { name: 'Sprinkler Repair', href: '/services/sprinkler-repair' },
   { name: 'Irrigation Systems', href: '/services/commercial-irrigation' },
-  { name: 'Commercial Maintenance', href: '/services/commercial-maintenance-tuscaloosa' },
+  { name: 'Zero-Disruption Maintenance', href: '/services/zero-disruption-maintenance' },
 ];
 
 export const CITY_NAMES = CITIES.map((c) => c.name);

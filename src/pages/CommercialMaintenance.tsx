@@ -11,12 +11,12 @@ export default function CommercialMaintenance() {
     return (
         <>
         <Helmet>
-            <title>Commercial Landscaping Maintenance | Birmingham Metro & West Alabama | AlaTex</title>
+            <title>Zero-Disruption Maintenance | Birmingham Metro & West Alabama | AlaTex</title>
             <meta name="description" content="Zero-disruption commercial landscaping maintenance for corporate parks, retail centers, and HOAs in Hoover, Vestavia Hills, Mountain Brook, Irondale, Tuscaloosa & Northport, AL. Call (205) 310-0553." />
-            <link rel="canonical" href="https://www.alatexirrigation.com/services/commercial-maintenance-tuscaloosa" />
-            <meta property="og:title" content="Commercial Landscaping Maintenance | AlaTex Landscaping" />
+            <link rel="canonical" href="https://www.alatexirrigation.com/services/zero-disruption-maintenance" />
+            <meta property="og:title" content="Zero-Disruption Maintenance | AlaTex Landscaping" />
             <meta property="og:description" content="Corporate-grade commercial landscaping maintenance across Greater Birmingham and West Alabama. Zero disruption, full accountability." />
-            <meta property="og:url" content="https://www.alatexirrigation.com/services/commercial-maintenance-tuscaloosa" />
+            <meta property="og:url" content="https://www.alatexirrigation.com/services/zero-disruption-maintenance" />
         </Helmet>
             <section className="relative pt-32 pb-16 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
                 <motion.div
