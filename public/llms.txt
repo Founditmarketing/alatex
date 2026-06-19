@@ -1,48 +1,58 @@
 # AlaTex Landscaping
-> landscaping business, Tuscaloosa, Alabama
+> Full-service landscaping company serving Greater Birmingham and West Alabama.
 
-AlaTex Landscaping is Alabama's premier partner for high-stakes commercial landscaping, irrigation, and drainage solutions. Founded by owner-operator Bryan Moore, the company has grown from a sprinkler repair side hustle to a multi-state operation serving premium commercial facilities and luxury estates.
+AlaTex Landscaping provides landscaping, landscape construction, drainage, retaining walls, outdoor lighting, and sprinkler repair for residential and commercial properties across the Birmingham metro and West Alabama. Owner-operated by Bryan Moore, the company began as a sprinkler repair business and grew into a complete residential and commercial landscaping operation. Fully licensed and insured.
 
 ## Services
-- Commercial Landscaping Maintenance
-- High-End Residential Landscaping
-- French Drain Installation
-- Commercial Irrigation Systems
-- Hydrostatic Pressure Management
-- Zero-Disruption Operations
+- Landscape Construction (patios, walkways, outdoor living spaces, full installation)
+- Retaining Walls (engineered block, boulder, and structural walls with drainage)
+- Drainage & French Drain Installation (standing water, erosion, foundation protection)
+- Outdoor Lighting (low-voltage landscape and architectural lighting)
+- Sprinkler Repair (irrigation repair, tuning, and upgrades)
+- Irrigation Systems (design, installation, smart controllers)
+- Commercial Landscaping & Maintenance
 
 ## Service Area
-Tuscaloosa, Alabama and surrounding areas including Northport and West Alabama
+Hoover, Vestavia Hills, Mountain Brook, Irondale, Tuscaloosa, and Northport, Alabama, plus the greater Birmingham metro and West Alabama.
 
 ## Contact
 - Phone: (205) 310-0553
-- Address: Tuscaloosa, Alabama
-- Website: https://fourseasonstexas.com
+- Email: Bryan@alatexlandscaping.com
+- Website: https://www.alatexirrigation.com
 
 ## Key Pages
-- Home (/): Main landing page showcasing services and company story
-- Case Studies (/case-studies/chick-fil-a): Commercial project examples
-- Consultation (/consultation): Service inquiry and scheduling
-- Commercial Services (/services/commercial-maintenance-tuscaloosa): Detailed commercial offerings
-- Privacy Policy (/privacy-policy): Data protection information
-- Terms of Service (/terms-of-service): Service agreement terms
-
-## About
-Bryan Moore built AlaTex Landscaping from the ground up, starting as a sprinkler repair side hustle while working in corporate supply management. With over 15 years in the industry and 500+ completed projects, the company maintains a 100% client satisfaction rate. Featured in the Hopkins County Chamber of Commerce for entrepreneurial excellence, AlaTex brings institutional-scale expertise to Alabama's commercial and residential landscaping market.
+- Home (/): Services, service areas, and company overview
+- Commercial Landscaping & Grounds Maintenance (/services/commercial)
+- Landscape Construction (/services/landscape-construction)
+- Retaining Walls (/services/retaining-walls)
+- Drainage & French Drains (/services/french-drain-installation)
+- Outdoor Lighting (/services/outdoor-lighting)
+- Sprinkler Repair (/services/sprinkler-repair)
+- Irrigation Systems (/services/commercial-irrigation)
+- Commercial Maintenance (/services/commercial-maintenance-tuscaloosa)
+- Hoover, AL (/landscaping/hoover-al)
+- Vestavia Hills, AL (/landscaping/vestavia-hills-al)
+- Mountain Brook, AL (/landscaping/mountain-brook-al)
+- Irondale, AL (/landscaping/irondale-al)
+- Tuscaloosa, AL (/landscaping/tuscaloosa-al)
+- Northport, AL (/landscaping/northport-al)
+- About / Company Background (/about)
+- Client Reviews & Testimonials (/reviews)
+- Free Estimate (/consultation)
 
 ## Frequently Asked Questions
 
 **What areas do you serve?**
-We primarily serve Tuscaloosa and Northport, Alabama, with projects extending throughout West Alabama.
+We serve Hoover, Vestavia Hills, Mountain Brook, Irondale, Tuscaloosa, and Northport, Alabama, plus the greater Birmingham metro and West Alabama.
 
-**Do you handle both residential and commercial projects?**
-Yes, we specialize in high-end residential estates and premium commercial facilities, including corporate parks and retail centers.
+**What services do you offer?**
+Landscaping, landscape construction, drainage and French drains, retaining walls, outdoor lighting, sprinkler repair, and irrigation systems for both residential and commercial properties.
 
-**What makes your drainage solutions different?**
-We engineer advanced French drain systems specifically designed to combat hydrostatic pressure and prevent erosion, using institutional-grade materials and techniques.
+**Do you build retaining walls?**
+Yes. We design and build engineered segmental, boulder, and structural retaining walls with built-in drainage to hold slopes and stop erosion in the Birmingham metro's clay soils.
 
-**How do you ensure zero-disruption operations?**
-We strategically phase all landscaping deployment to ensure critical business operations continue without interruption, adhering strictly to corporate regulations and safety protocols.
+**Do you repair sprinkler systems?**
+Yes. We repair, tune, and upgrade sprinkler and irrigation systems — broken heads, leaks, valves, and controllers — across all of our service areas.
 
 **Are you licensed and insured?**
-Yes, AlaTex Landscaping is fully licensed and insured, meeting all regulatory requirements for commercial and residential landscaping operations.
+Yes, AlaTex Landscaping is fully licensed and insured.

@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Phone, Droplets, ArrowRight, CheckCircle2, Waves, Sunrise } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { useGeo } from '../hooks/useGeo';
 
 export default function CommercialIrrigation() {
@@ -9,6 +10,14 @@ export default function CommercialIrrigation() {
 
     return (
         <>
+            <Helmet>
+                <title>Irrigation Systems & Sprinkler Repair | Birmingham Metro & West Alabama | AlaTex</title>
+                <meta name="description" content="Irrigation system design, installation, and sprinkler repair in Hoover, Vestavia Hills, Mountain Brook, Irondale, Tuscaloosa & Northport, AL. Smart controllers, leak repair, and tune-ups. Call (205) 310-0553." />
+                <link rel="canonical" href="https://www.alatexirrigation.com/services/commercial-irrigation" />
+                <meta property="og:title" content="Irrigation Systems & Sprinkler Repair | AlaTex Landscaping" />
+                <meta property="og:description" content="High-capacity irrigation and sprinkler repair across Greater Birmingham and West Alabama." />
+                <meta property="og:url" content="https://www.alatexirrigation.com/services/commercial-irrigation" />
+            </Helmet>
             <section className="relative pt-32 pb-16 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -23,7 +32,7 @@ export default function CommercialIrrigation() {
                         <span className="text-brand-green">Massive Scale.</span>
                     </h1>
                     <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
-                        We engineer, install, and mandate high-capacity irrigation systems that guarantee the absolute vitality of your commercial property investments across West Alabama.
+                        We engineer, install, and repair high-capacity irrigation and sprinkler systems that guarantee the absolute vitality of your property investments across Greater Birmingham and West Alabama.
                     </p>
                     <Link to="/consultation" className="bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto w-max">
                         Get an Irrigation Estimate

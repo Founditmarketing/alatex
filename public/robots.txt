@@ -1,12 +1,14 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
 
 # AI crawlers — allowed for AI search visibility
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -33,4 +35,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://fourseasonstexas.com/sitemap.xml
+Sitemap: https://www.alatexirrigation.com/sitemap.xml

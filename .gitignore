@@ -8,3 +8,6 @@ coverage/
 !.env.example
 
 .vercel
+
+# Machine-specific Claude Code settings
+.claude/settings.local.json

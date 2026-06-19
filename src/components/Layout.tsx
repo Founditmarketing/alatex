@@ -3,6 +3,7 @@ import { Leaf, Phone, ArrowRight, Menu, X, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { useGeo } from '../hooks/useGeo';
+import { CITIES, SERVICE_NAV } from '../data/seo';
 
 export default function Layout() {
     const { locName, locCities } = useGeo();
@@ -47,15 +48,18 @@ export default function Layout() {
                         <span className="font-display font-bold text-2xl md:text-3xl text-brand-dark tracking-tight">AlaTex</span>
                     </Link>
 
-                    <div className="hidden md:flex items-center gap-10">
-                        {['Services', 'Our Story', 'Reviews'].map((item) => (
-                            <Link key={item} to={`/#${item.toLowerCase().replace(' ', '-')}`} className="text-sm font-semibold text-gray-500 hover:text-brand-dark transition-colors">
-                                {item}
+                    <div className="hidden md:flex items-center gap-7">
+                        {[
+                            { label: 'Commercial', to: '/services/commercial' },
+                            { label: 'Services', to: '/#services' },
+                            { label: 'About', to: '/about' },
+                            { label: 'Reviews', to: '/reviews' },
+                            { label: 'Case Studies', to: '/case-studies/chick-fil-a' },
+                        ].map((item) => (
+                            <Link key={item.label} to={item.to} className="text-sm font-semibold text-gray-500 hover:text-brand-dark transition-colors">
+                                {item.label}
                             </Link>
                         ))}
-                        <Link to="/case-studies/chick-fil-a" className="text-sm font-semibold text-gray-500 hover:text-brand-dark transition-colors">
-                            Case Studies
-                        </Link>
                     </div>
 
                     <div className="hidden md:flex items-center gap-6">
@@ -91,9 +95,11 @@ export default function Layout() {
                                 </button>
                             </div>
                             <div className="flex flex-col gap-6 text-2xl font-display font-semibold text-brand-dark">
+                                <Link to="/services/commercial" onClick={() => setIsMobileMenuOpen(false)}>Commercial</Link>
                                 <Link to="/#services" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
-                                <Link to="/#our-story" onClick={() => setIsMobileMenuOpen(false)}>Our Story</Link>
-                                <Link to="/#reviews" onClick={() => setIsMobileMenuOpen(false)}>Reviews</Link>
+                                <Link to="/#service-areas" onClick={() => setIsMobileMenuOpen(false)}>Service Areas</Link>
+                                <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+                                <Link to="/reviews" onClick={() => setIsMobileMenuOpen(false)}>Reviews</Link>
                                 <Link to="/case-studies/chick-fil-a" onClick={() => setIsMobileMenuOpen(false)}>Case Studies</Link>
                             </div>
                         </div>
@@ -115,35 +121,49 @@ export default function Layout() {
 
             {/* Heavy Footer */}
             <footer className="bg-[#0f1a0c] text-gray-500 py-16 border-t border-brand-green/20 mt-auto">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-                    <div className="col-span-1 lg:col-span-2">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-5 gap-12">
+                    <div className="col-span-1 md:col-span-2">
                         <div className="flex items-center gap-3 mb-6">
                             <Leaf className="text-brand-green w-8 h-8" />
                             <span className="font-display font-extrabold text-2xl text-white tracking-tight">AlaTex</span>
                         </div>
                         <p className="font-medium max-w-sm mb-4">
-                            The premier resource for absolute landscaping excellence across {locName} and beyond.
+                            Commercial &amp; residential landscaping, grounds maintenance, irrigation, drainage, retaining walls, and outdoor lighting across {locName}.
                         </p>
-                        <p className="text-xs text-gray-600 font-medium">Our Roots: Founded in Sulphur Springs, TX by owner-operator Bryan Moore — built from a sprinkler repair side hustle into a multi-state landscaping operation.</p>
+                        <p className="text-xs text-gray-600 font-medium mb-6">A multi-crew operation owner-operated by Bryan Moore. Fully licensed &amp; insured.</p>
+                        <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
+                            <Link to="/services/commercial" className="hover:text-brand-green transition-colors">Commercial</Link>
+                            <Link to="/about" className="hover:text-brand-green transition-colors">About</Link>
+                            <Link to="/reviews" className="hover:text-brand-green transition-colors">Reviews</Link>
+                            <Link to="/case-studies/chick-fil-a" className="hover:text-brand-green transition-colors">Case Studies</Link>
+                        </div>
                     </div>
                     <div>
-                        <h4 className="text-white font-bold mb-6 tracking-widest uppercase text-sm">Navigation</h4>
-                        <div className="flex flex-col gap-4 font-semibold">
-                            <Link to="/#services" className="hover:text-brand-green transition-colors">Services</Link>
-                            <Link to="/#our-story" className="hover:text-brand-green transition-colors">Our Story</Link>
-                            <Link to="/#reviews" className="hover:text-brand-green transition-colors">Reviews</Link>
+                        <h4 className="text-white font-bold mb-6 tracking-widest uppercase text-sm">Services</h4>
+                        <div className="flex flex-col gap-3 font-semibold text-sm">
+                            {SERVICE_NAV.map((s) => (
+                                <Link key={s.href} to={s.href} className="hover:text-brand-green transition-colors">{s.name}</Link>
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-bold mb-6 tracking-widest uppercase text-sm">Service Areas</h4>
+                        <div className="flex flex-col gap-3 font-semibold text-sm">
+                            {CITIES.map((c) => (
+                                <Link key={c.slug} to={`/landscaping/${c.slug}-al`} className="hover:text-brand-green transition-colors">{c.name}, AL</Link>
+                            ))}
                         </div>
                     </div>
                     <div>
                         <h4 className="text-white font-bold mb-6 tracking-widest uppercase text-sm">Contact</h4>
                         <div className="flex flex-col gap-4 font-semibold text-gray-400">
                             <a href="tel:+12053100553" className="text-brand-accent font-bold text-lg hover:text-white transition-colors">{phone}</a>
-                            <a href="mailto:Bryan@alatexlandscaping.com" className="hover:text-white transition-colors">Bryan@alatexlandscaping.com</a>
+                            <a href="mailto:Bryan@alatexlandscaping.com" className="hover:text-white transition-colors break-all">Bryan@alatexlandscaping.com</a>
                             <address className="not-italic text-sm leading-relaxed">
-                                Tuscaloosa, AL 35401<br />
-                                Serving {locCities}
+                                Serving {locCities}<br />
+                                &amp; Greater Birmingham, AL
                             </address>
-                            <span className="flex items-center gap-2 mt-2 text-sm"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Fully Licensed & Insured</span>
+                            <span className="flex items-center gap-2 mt-2 text-sm"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Fully Licensed &amp; Insured</span>
                         </div>
                     </div>
                 </div>

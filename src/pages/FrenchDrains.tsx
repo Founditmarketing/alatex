@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Phone, Shovel, ShieldAlert, Zap, Layers, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { useGeo } from '../hooks/useGeo';
 
 export default function FrenchDrains() {
@@ -9,6 +10,14 @@ export default function FrenchDrains() {
 
     return (
         <>
+            <Helmet>
+                <title>Drainage & French Drain Installation | Birmingham Metro & West Alabama | AlaTex</title>
+                <meta name="description" content="French drains, yard drainage, and erosion control in Hoover, Vestavia Hills, Mountain Brook, Irondale, Tuscaloosa & Northport, AL. Stop standing water and protect your foundation. Call (205) 310-0553." />
+                <link rel="canonical" href="https://www.alatexirrigation.com/services/french-drain-installation" />
+                <meta property="og:title" content="Drainage & French Drain Installation | AlaTex Landscaping" />
+                <meta property="og:description" content="Heavy-duty French drain and drainage systems across Greater Birmingham and West Alabama." />
+                <meta property="og:url" content="https://www.alatexirrigation.com/services/french-drain-installation" />
+            </Helmet>
             <section className="relative pt-32 pb-16 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                 <motion.div
                     className="w-full lg:w-[60%] flex flex-col items-start"

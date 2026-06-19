@@ -11,12 +11,12 @@ export default function CommercialMaintenance() {
     return (
         <>
         <Helmet>
-            <title>Commercial Landscaping Maintenance Tuscaloosa AL | AlaTex Landscaping</title>
-            <meta name="description" content="Zero-disruption commercial landscaping maintenance in Tuscaloosa, Alabama. AlaTex Landscaping serves corporate parks, retail centers, and commercial facilities. Call (205) 310-0553." />
-            <link rel="canonical" href="https://fourseasonstexas.com/services/commercial-maintenance-tuscaloosa" />
-            <meta property="og:title" content="Commercial Landscaping Maintenance Tuscaloosa | AlaTex" />
-            <meta property="og:description" content="Corporate-grade commercial landscaping maintenance in Tuscaloosa, AL. Zero disruption, full accountability." />
-            <meta property="og:url" content="https://fourseasonstexas.com/services/commercial-maintenance-tuscaloosa" />
+            <title>Commercial Landscaping Maintenance | Birmingham Metro & West Alabama | AlaTex</title>
+            <meta name="description" content="Zero-disruption commercial landscaping maintenance for corporate parks, retail centers, and HOAs in Hoover, Vestavia Hills, Mountain Brook, Irondale, Tuscaloosa & Northport, AL. Call (205) 310-0553." />
+            <link rel="canonical" href="https://www.alatexirrigation.com/services/commercial-maintenance-tuscaloosa" />
+            <meta property="og:title" content="Commercial Landscaping Maintenance | AlaTex Landscaping" />
+            <meta property="og:description" content="Corporate-grade commercial landscaping maintenance across Greater Birmingham and West Alabama. Zero disruption, full accountability." />
+            <meta property="og:url" content="https://www.alatexirrigation.com/services/commercial-maintenance-tuscaloosa" />
         </Helmet>
             <section className="relative pt-32 pb-16 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
                 <motion.div
@@ -32,7 +32,7 @@ export default function CommercialMaintenance() {
                         <span className="text-brand-green">Commercial Properties.</span>
                     </h1>
                     <p className="text-xl text-gray-500 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
-                        Corporate standards demand specialized operational procedures. We deliver zero-disruption landscape maintenance engineered specifically for high-traffic facilities in West Alabama.
+                        Corporate standards demand specialized operational procedures. We deliver zero-disruption landscape maintenance engineered specifically for high-traffic facilities across Greater Birmingham and West Alabama.
                     </p>
                     <Link to="/consultation" className="bg-brand-dark hover:bg-brand-green text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-2xl flex items-center justify-center gap-3 mx-auto w-max">
                         Schedule a Commercial Site Walkthrough

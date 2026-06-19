@@ -8,6 +8,11 @@ import Consultation from './pages/Consultation';
 import ChickFilACaseStudy from './pages/ChickFilACaseStudy';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import LocationPage from './pages/LocationPage';
+import ServicePage from './pages/ServicePage';
+import CommercialServices from './pages/CommercialServices';
+import About from './pages/About';
+import Reviews from './pages/Reviews';
 
 export default function App() {
   return (
@@ -15,10 +20,15 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<LandingPage />} />
+          <Route path="services/commercial" element={<CommercialServices />} />
           <Route path="services/commercial-maintenance-tuscaloosa" element={<CommercialMaintenance />} />
           <Route path="services/commercial-irrigation" element={<CommercialIrrigation />} />
           <Route path="services/french-drain-installation" element={<FrenchDrains />} />
+          <Route path="services/:slug" element={<ServicePage />} />
+          <Route path="landscaping/:slug" element={<LocationPage />} />
           <Route path="consultation" element={<Consultation />} />
+          <Route path="about" element={<About />} />
+          <Route path="reviews" element={<Reviews />} />
           <Route path="case-studies/chick-fil-a" element={<ChickFilACaseStudy />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="terms-of-service" element={<TermsOfService />} />

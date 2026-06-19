@@ -10,12 +10,12 @@ export default function TermsOfService() {
     return (
         <>
         <Helmet>
-            <title>Terms of Service | AlaTex Landscaping Tuscaloosa AL</title>
-            <meta name="description" content="Terms of Service for AlaTex Landscaping. Professional commercial and residential landscaping in Tuscaloosa and Northport, Alabama. Licensed and insured." />
-            <link rel="canonical" href="https://fourseasonstexas.com/terms-of-service" />
+            <title>Terms of Service | AlaTex Landscaping</title>
+            <meta name="description" content="Terms of Service for AlaTex Landscaping. Professional residential and commercial landscaping across Greater Birmingham and West Alabama. Licensed and insured." />
+            <link rel="canonical" href="https://www.alatexirrigation.com/terms-of-service" />
             <meta property="og:title" content="Terms of Service | AlaTex Landscaping" />
-            <meta property="og:description" content="Terms of Service for AlaTex Landscaping — professional landscaping in Tuscaloosa, Alabama." />
-            <meta property="og:url" content="https://fourseasonstexas.com/terms-of-service" />
+            <meta property="og:description" content="Terms of Service for AlaTex Landscaping — professional landscaping across Greater Birmingham and West Alabama." />
+            <meta property="og:url" content="https://www.alatexirrigation.com/terms-of-service" />
         </Helmet>
         <div className="min-h-screen bg-[#F9FAFB] pt-28 pb-24">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,7 +63,7 @@ export default function TermsOfService() {
 
                     <Section title="1. Acceptance of Terms">
                         <p>
-                            By accessing and using our website at <strong>alatexlandscaping.com</strong> or by engaging AlaTex Landscaping for any services, you accept and agree to be bound by these Terms and our Privacy Policy. If you do not agree, please do not use our website or services.
+                            By accessing and using our website at <strong>alatexirrigation.com</strong> or by engaging AlaTex Landscaping for any services, you accept and agree to be bound by these Terms and our Privacy Policy. If you do not agree, please do not use our website or services.
                         </p>
                     </Section>
 

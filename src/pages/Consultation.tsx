@@ -67,12 +67,12 @@ export default function Consultation() {
     return (
         <>
         <Helmet>
-            <title>Free Landscaping Consultation Tuscaloosa AL | AlaTex Landscaping</title>
-            <meta name="description" content="Request a free commercial or residential landscaping consultation with AlaTex Landscaping in Tuscaloosa, Alabama. Zero-disruption projects. Call (205) 310-0553." />
-            <link rel="canonical" href="https://fourseasonstexas.com/consultation" />
-            <meta property="og:title" content="Schedule a Consultation | AlaTex Landscaping" />
-            <meta property="og:description" content="Start your landscaping project in Tuscaloosa, AL. Commercial and residential specialists. Contact AlaTex Landscaping today." />
-            <meta property="og:url" content="https://fourseasonstexas.com/consultation" />
+            <title>Free Landscaping Estimate | Hoover, Vestavia Hills, Mountain Brook & Irondale AL</title>
+            <meta name="description" content="Request a free landscaping estimate from AlaTex Landscaping — landscape construction, drainage, retaining walls, outdoor lighting & sprinkler repair across Greater Birmingham and West Alabama. Call (205) 310-0553." />
+            <link rel="canonical" href="https://www.alatexirrigation.com/consultation" />
+            <meta property="og:title" content="Get a Free Estimate | AlaTex Landscaping" />
+            <meta property="og:description" content="Start your landscaping project across Greater Birmingham and West Alabama. Residential and commercial specialists. Contact AlaTex Landscaping today." />
+            <meta property="og:url" content="https://www.alatexirrigation.com/consultation" />
         </Helmet>
         <div className="min-h-screen bg-brand-dark text-white pt-32 pb-24 relative overflow-hidden flex flex-col justify-center">
             {/* Atmospheric Background */}
