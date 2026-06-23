@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Layout from './components/Layout';
 import LandingPage from './components/LandingPage';
 import CommercialMaintenance from './pages/CommercialMaintenance';
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="terms-of-service" element={<TermsOfService />} />
         </Route>
       </Routes>
+      <Analytics />
     </Router>
   );
 }
