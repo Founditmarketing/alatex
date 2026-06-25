@@ -7,6 +7,13 @@ export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
     plugins: [react(), tailwindcss()],
+    ssr: {
+      // react-helmet-async ships as CommonJS. When externalized in the SSR
+      // (prerender) build, Node's ESM loader can't resolve its named exports
+      // ("does not provide an export named 'Helmet'"). Bundling it lets Vite
+      // handle the CJS→ESM interop at build time. See scripts/prerender.ts.
+      noExternal: ['react-helmet-async'],
+    },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
