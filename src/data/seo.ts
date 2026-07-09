@@ -305,8 +305,6 @@ export const REVIEWS: Review[] = [
   { name: 'Mike Roberts', loc: 'Hoover, AL', text: 'The retaining wall and drainage revamp we needed required absolute professionals. The AlaTex team executed with military precision.' },
 ];
 
-export const AGGREGATE_RATING = { value: '5', count: '47' };
-
 // Company stats used on the homepage Our Story section and the /about page.
 export const STATS: { label: string; val: string }[] = [
   { label: 'Years in the Industry', val: '15+' },

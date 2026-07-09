@@ -2,18 +2,47 @@ import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2, TrendingDown, Clock, ShieldCheck, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { SITE_URL, BUSINESS_NAME } from '../data/seo';
+
+const url = `${SITE_URL}/case-studies/chick-fil-a`;
+const title = 'Chick-fil-A Commercial Landscaping Case Study | AlaTex Landscaping';
+const description =
+  'How AlaTex Landscaping delivered zero-disruption commercial maintenance for Chick-fil-A — 34% reduction in water waste. Serving Greater Birmingham & West Alabama.';
+
+const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+        {
+            '@type': 'Article',
+            headline: 'Zero-Disruption Maintenance for High-Volume Retail: A Chick-fil-A Case Study',
+            description,
+            url,
+            author: { '@type': 'Organization', name: BUSINESS_NAME, url: SITE_URL },
+            publisher: { '@type': 'Organization', name: BUSINESS_NAME, url: SITE_URL },
+            about: { '@type': 'Organization', name: 'Chick-fil-A' },
+        },
+        {
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Chick-fil-A Case Study', item: url },
+            ],
+        },
+    ],
+};
 
 export default function ChickFilACaseStudy() {
 
     return (
         <>
         <Helmet>
-            <title>Chick-fil-A Commercial Landscaping Case Study | AlaTex Landscaping</title>
-            <meta name="description" content="How AlaTex Landscaping delivered zero-disruption commercial maintenance for Chick-fil-A — 34% reduction in water waste. Serving Greater Birmingham & West Alabama." />
-            <link rel="canonical" href="https://www.alatexirrigation.com/case-studies/chick-fil-a" />
+            <title>{title}</title>
+            <meta name="description" content={description} />
+            <link rel="canonical" href={url} />
             <meta property="og:title" content="Chick-fil-A Case Study | AlaTex Landscaping" />
             <meta property="og:description" content="Zero-disruption commercial landscaping for high-volume retail. See how AlaTex delivered results for Chick-fil-A." />
-            <meta property="og:url" content="https://www.alatexirrigation.com/case-studies/chick-fil-a" />
+            <meta property="og:url" content={url} />
+            <script type="application/ld+json">{JSON.stringify(schema)}</script>
         </Helmet>
         <div className="bg-white min-h-screen">
             {/* Hero Section */}

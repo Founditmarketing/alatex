@@ -3,12 +3,12 @@ import { ArrowRight, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Reveal from '../components/Reveal';
-import { SITE_URL, REVIEWS, AGGREGATE_RATING } from '../data/seo';
+import { SITE_URL, REVIEWS } from '../data/seo';
 
 const url = `${SITE_URL}/reviews`;
 const title = 'Client Reviews & Testimonials | AlaTex Landscaping';
 const description =
-  'Read what commercial property managers, facilities directors, and homeowners across Greater Birmingham and West Alabama say about AlaTex Landscaping. Rated 5 stars across 47 reviews.';
+  'Read what commercial property managers, facilities directors, and homeowners across Greater Birmingham and West Alabama say about AlaTex Landscaping.';
 
 const schema = {
   '@context': 'https://schema.org',
@@ -59,11 +59,9 @@ export default function Reviews() {
                 <Star key={i} className="w-7 h-7 fill-brand-accent text-brand-accent" />
               ))}
             </div>
-            <span className="text-2xl font-display font-bold text-brand-dark">{AGGREGATE_RATING.value}.0</span>
           </div>
           <p className="text-lg text-gray-500 font-medium">
-            Rated {AGGREGATE_RATING.value} stars across {AGGREGATE_RATING.count} reviews from commercial and residential
-            clients across Greater Birmingham &amp; West Alabama.
+            Trusted by commercial and residential clients across Greater Birmingham &amp; West Alabama.
           </p>
         </motion.div>
       </section>
